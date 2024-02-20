@@ -1,0 +1,87 @@
+<main class="container my-5">
+
+    <section class="mb-5 mx-3" id="sobre-mi">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="fw-bold">Hola, <span class="shiny-text">soy Ricardo</span>
+                </h1>
+                <p class="fs-5 shine-effect">Desarrollador Full Stack</p>
+
+                <p class="fs-5 mt-5 mb-4">¡Hola Mundo! 👋🏼 Soy Ricardo, un apasionado de la tecnología, los deportes y
+                    los
+                    desafíos.
+                    Con una formación en Desarrollo de aplicaciones web, actualmente me encuentro en un emocionante
+                    viaje de
+                    aprendizaje para especializarme como Full Stack Developer y explorar nuevas oportunidades en la
+                    industria tecnológica.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/retrato.webp" class="img-thumbnail mx-auto d-block" alt="retrato">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="mt-5" id="contacto">
+        <div class="mx-3">
+
+            <p class="fs-2 fw-bold text-center">Contacto</p>
+            <p class="my-0 fs-5 text-center">Para cualquier oferta o consulta puedes ponerte en contacto conmigo através
+                de este formulario y me pondré en contacto contigo lo antes posible.</p>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 border text-bg-light rounded">
+                    <form [formGroup]="form" class="mx-3 my-4" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nombre"
+                                formControlName="name" required autocomplete="name"
+                                [ngClass]="{ 'is-invalid': form.get('name')!.invalid && this.submited }">
+                            <div *ngIf="form.get('name')!.hasError('required')" class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="text" class="form-control" id="email" placeholder="Correo electrónico"
+                                formControlName="email" required autocomplete="email"
+                                [ngClass]="{ 'is-invalid': form.get('email')!.invalid && this.submited }">
+                            <div *ngIf="form.get('email')!.hasError('required')" class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                            <div *ngIf="form.get('email')!.hasError('invalidEmail')" class="invalid-feedback">
+                                Correo electrónico no válido
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" placeholder="Mensaje" rows="5"
+                                formControlName="message" required
+                                [ngClass]="{ 'is-invalid': form.get('message')!.invalid && this.submited }"></textarea>
+                            <div *ngIf="form.get('message')!.hasError('required')" class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-lg fw-bold" type="submit" [disabled]="this.loading">
+                            Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="my-5 pt-5 pb-4 text-center">
+        <p class="my-0 mb-5">
+            <small>©2024 Ricardo Huaripata. Todos los derechos reservados</small>
+        </p>
+        <hr>
+    </footer>
+
+</main>

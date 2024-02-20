@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --brand-main: #00c3ff;
+  --brand-secondary: #020617;
+}
+
+$primary: #00c3ff;
+$secondary: #020617;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.container {
+  max-width: 950px;
+}
+
+body {
+  padding-top: 65px;
+  background: #020617;
+  color: #ffffff;
+}
+
+.shiny-text {
+  color: var(--brand-main);
+}
+
+.confirm-button-class {
+  background-color: #070707 !important;
+}
+
+.transparent-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.brand-text {
+  font-weight: 900;
+}
+.shine-effect {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
