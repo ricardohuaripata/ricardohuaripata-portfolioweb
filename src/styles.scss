@@ -1,10 +1,10 @@
 :root {
   --brand-main: #3ec2ff;
-  --brand-secondary: #020617;
+  --brand-secondary: #040a27;
 }
 
 $primary: #3ec2ff;
-$secondary: #020617;
+$secondary: #040a27;
 $success: #14a800;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -20,7 +20,8 @@ $success: #14a800;
 
 body {
   padding-top: 65px;
-  background: var(--brand-secondary);
+  background: linear-gradient(180deg, var(--brand-secondary) 0%, rgb(0, 2, 10) 30%);
+  
   color: #ffffff;
 }
 
@@ -86,4 +87,9 @@ body {
   .responsive-text {
     font-size: 4vw;
   }
+}
+
+.box-background {
+  background: rgb(0,7,32);
+  background: linear-gradient(90deg, rgb(1, 10, 43) 0%, rgb(0, 0, 0) 100%);
 }
