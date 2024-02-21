@@ -7,11 +7,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { TechnologiesComponent } from '../../components/technologies/technologies.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, TechnologiesComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
 })
@@ -19,6 +20,7 @@ export class HomePageComponent {
   form: FormGroup;
   loading: boolean = false;
   submited: boolean = false;
+  successSubmit: boolean = false;
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -48,7 +50,9 @@ export class HomePageComponent {
     this.loading = true;
 
     setTimeout(() => {
-      alert('Enviado!');
+      this.form.reset();
+      this.submited = false;
+      this.successSubmit = true;
       this.loading = false;
     }, 1000);
   }

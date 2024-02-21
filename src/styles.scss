@@ -1,12 +1,18 @@
 :root {
-  --brand-main: #00c3ff;
+  --brand-main: #3ec2ff;
   --brand-secondary: #020617;
 }
 
-$primary: #00c3ff;
+$primary: #3ec2ff;
 $secondary: #020617;
+$success: #14a800;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+::selection {
+  background-color: var(--brand-main);
+  color: #000000; /* Para cambiar el color del texto cuando está seleccionado */
+}
 
 .container {
   max-width: 950px;
@@ -14,16 +20,12 @@ $secondary: #020617;
 
 body {
   padding-top: 65px;
-  background: #020617;
+  background: var(--brand-secondary);
   color: #ffffff;
 }
 
 .shiny-text {
   color: var(--brand-main);
-}
-
-.confirm-button-class {
-  background-color: #070707 !important;
 }
 
 .transparent-background {
@@ -34,6 +36,11 @@ body {
 .brand-text {
   font-weight: 900;
 }
+
+.custom-padding-top {
+  padding-top: 72px;
+}
+
 .shine-effect {
   -webkit-mask-image: linear-gradient(
     -75deg,
@@ -51,5 +58,32 @@ body {
   }
   to {
     -webkit-mask-position: -50%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--brand-main), var(--brand-secondary));
+}
+
+@media (max-width: 470px) {
+  .skill-icon {
+    width: 70%;
+  }
+  .responsive-text {
+    font-size: small;
+  }
+}
+
+@media (max-width: 280px) {
+  .responsive-text {
+    font-size: 4vw;
   }
 }

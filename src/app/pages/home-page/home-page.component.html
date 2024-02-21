@@ -1,6 +1,6 @@
 <main class="container my-5">
 
-    <section class="mb-5 mx-3" id="sobre-mi">
+    <section class="custom-padding-top mb-5 mx-3" id="sobre-mi">
         <div class="row">
             <div class="col-md-8">
                 <h1 class="fw-bold">Hola, <span class="shiny-text">soy Ricardo</span>
@@ -23,7 +23,20 @@
 
     <hr>
 
-    <section class="mt-5" id="contacto">
+    <section class="custom-padding-top my-5" id="tecnologias">
+        <div class="mx-3">
+
+            <p class="fs-2 fw-bold">Tecnologías</p>
+            <p class="my-0 fs-5">En mi viaje por el <span class="fw-bold shiny-text">mundo del desarrollo web</span>, he
+                cultivado experiencia y habilidades en una variedad de tecnologías. <span class="fw-bold shiny-text">Mi
+                    stack tecnológico incluye:</span></p>
+        </div>
+        <app-technologies></app-technologies>
+    </section>
+
+    <hr>
+
+    <section class="custom-padding-top mt-5" id="contacto">
         <div class="mx-3">
 
             <p class="fs-2 fw-bold text-center">Contacto</p>
@@ -68,9 +81,14 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-secondary btn-lg fw-bold" type="submit" [disabled]="this.loading">
+                        <button class="btn btn-secondary btn-md fw-bold" type="submit" [disabled]="this.loading">
                             Enviar</button>
                     </form>
+
+                    <div class="alert alert-success" role="alert" *ngIf="this.successSubmit">
+                        <h5 class="alert-heading">¡Enviado!</h5>
+                        <p class="my-0">Contactare contigo lo antes posible.</p>
+                    </div>
                 </div>
             </div>
 
