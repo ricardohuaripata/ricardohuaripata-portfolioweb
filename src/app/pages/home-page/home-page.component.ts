@@ -21,7 +21,15 @@ export class HomePageComponent {
   loading: boolean = false;
   submited: boolean = false;
   successSubmit: boolean = false;
-
+  experienciaList = [
+    {
+      puesto: 'QA Automation Trainee',
+      empresa: 'Atos España',
+      enlace: 'https://atos.net/es/spain',
+      fecha: 'Marzo 2023 - Junio 2023',
+      descripcion: 'Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.'
+    },
+  ];
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       name: ['', [Validators.required]],
