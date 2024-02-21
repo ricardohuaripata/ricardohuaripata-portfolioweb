@@ -1,6 +1,7 @@
 :root {
   --brand-main: #3ec2ff;
   --brand-secondary: #040a27;
+  --brand-tertiary: #8bf2ff;
 }
 
 $primary: #3ec2ff;
@@ -25,8 +26,12 @@ body {
   color: #ffffff;
 }
 
-.shiny-text {
+.shiny-title {
   color: var(--brand-main);
+}
+
+.shiny-text {
+  color: var(--brand-tertiary);
 }
 
 .transparent-background {
