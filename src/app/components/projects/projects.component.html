@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div *ngFor="let proyecto of proyectos" class="col-md-5 rounded mx-auto mt-4 box-background clickable px-0" [routerLink]="['/projects/', proyecto.id]">
+            <div>
+                <img [src]="proyecto.imagenPortadaUrl" class="rounded" alt="retrato">
+
+                <div class="mx-3 my-4">
+                    <p class="fs-5 fw-bold shiny-title">{{proyecto.titulo}}</p>
+                    <p>{{proyecto.descripcion}}</p>
+    
+                    <ul>
+                        @for (etiqueta of proyecto.etiquetas; track etiqueta) {
+                        <li class="border rounded"><small>{{etiqueta}}</small></li>
+                        }
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -8,13 +8,14 @@ import {
   Validators,
 } from '@angular/forms';
 import { TechnologiesComponent } from '../../components/technologies/technologies.component';
+import { ProjectsComponent } from "../../components/projects/projects.component";
 
 @Component({
-  selector: 'app-home-page',
-  standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, TechnologiesComponent],
-  templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss',
+    selector: 'app-home-page',
+    standalone: true,
+    templateUrl: './home-page.component.html',
+    styleUrl: './home-page.component.scss',
+    imports: [ReactiveFormsModule, CommonModule, TechnologiesComponent, ProjectsComponent]
 })
 export class HomePageComponent {
   form: FormGroup;

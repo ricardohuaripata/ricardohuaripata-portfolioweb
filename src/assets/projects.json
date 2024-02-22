@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2",
+    "titulo": "Og's E-commerce",
+    "descripcion": "Este proyecto se trata de un ecommerce completo con backend y frontend que ofrece todas las funcionalidades que caracterizan a un ecommerce. Permite gestionar productos, pedidos, usuarios y autenticación, entre otras características.",
+    "etiquetas": [
+      "RESTful API",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "JWT",
+      "Amazon S3",
+      "Stripe",
+      "Java Mail Sender",
+      "Lombok",
+      "PostgreSQL",
+      "Angular",
+      "Bootstrap"
+    ],
+    "githubRepoUrl": "https://github.com/ricardohuaripata/ecommerce-frontend",
+    "imagenPortadaUrl": "assets/images/projects/project2.webp"
+  },
+  {
+    "id": "1",
+    "titulo": "ASHON E-commerce",
+    "descripcion": "Proyecto final de ciclo en el que se desarrolló aplicación web de arquitectura cliente-servidor que consiste en una tienda online para la venta de ropa para hombres y mujeres. La aplicación busca ofrecer una experiencia de usuario excepcional al proporcionar una interfaz atractiva y moderna, garantizando una navegación eficiente por los productos y una experiencia de compra intuitiva.",
+    "etiquetas": [
+      "RESTful API",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "Cloudinary",
+      "Nodemailer",
+      "Angular",
+      "Bootstrap"
+    ],
+    "githubRepoUrl": "https://github.com/ricardohuaripata/ASHON-Ecommerce-Client",
+    "imagenPortadaUrl": "assets/images/projects/project1.webp"
+  }
+]
