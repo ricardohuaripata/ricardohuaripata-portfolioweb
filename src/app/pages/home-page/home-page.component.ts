@@ -9,13 +9,14 @@ import {
 } from '@angular/forms';
 import { TechnologiesComponent } from '../../components/technologies/technologies.component';
 import { ProjectsComponent } from "../../components/projects/projects.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
     selector: 'app-home-page',
     standalone: true,
     templateUrl: './home-page.component.html',
     styleUrl: './home-page.component.scss',
-    imports: [ReactiveFormsModule, CommonModule, TechnologiesComponent, ProjectsComponent]
+    imports: [ReactiveFormsModule, CommonModule, TechnologiesComponent, ProjectsComponent, FooterComponent]
 })
 export class HomePageComponent {
   form: FormGroup;

@@ -11,7 +11,7 @@ export const routes: Routes = [
   {
     path: 'projects/:project',
     component: ProjectPageComponent,
-    title: 'Ricardo Huaripata 👨‍💻 | :project',
+    title: 'Ricardo Huaripata 👨‍💻 | Proyecto de desarrollo',
   },
   {
     path: '**',

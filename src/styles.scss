@@ -46,6 +46,18 @@ body {
   padding-top: 72px;
 }
 
+.tags-ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-li {
+  list-style: none;
+  padding: 0.2rem 0.6rem;
+}
+
 .shine-effect {
   -webkit-mask-image: linear-gradient(
     -75deg,

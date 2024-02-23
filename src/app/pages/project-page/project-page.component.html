@@ -1,1 +1,85 @@
-<p>project-page works!</p>
+<main *ngIf="this.project" class="container my-5">
+
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img [src]="this.project.thumbnail" class="rounded" [alt]="this.project.title">
+
+            </div>
+            <div class="col-md-8 mb-4">
+                <div class="mx-3 d-flex flex-column h-100">
+                    <h1 class="shiny-title fw-bold">{{project.title}}</h1>
+                    <div class="d-flex align-items-center mb-4"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" height="1em" width="1em" stroke-width="1.5" stroke="currentColor"
+                            class="w-4 h-4 text-primary-600 dark:text-primary-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5">
+                            </path>
+                        </svg>
+                        <small class="ms-2">{{project.startDate}} - {{project.endDate}}</small>
+                    </div>
+
+                    <div class="mt-auto d-flex align-items-center">
+                        <a class="d-flex align-items-center" [href]="project.githubRepoUrl" target="_blank">
+                            <p class="mb-0 me-2">Visitar repositorio</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em"
+                                width="1em" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h2 class="shiny-title fw-bold mb-3">Resumen</h2>
+            <p class="fs-5 my-0">{{project.summary}}</p>
+
+            <div class="ratio ratio-16x9 my-5">
+                <video controls>
+                    <source [src]="project.demoVideoUrl" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h2 class="shiny-title fw-bold mb-3">Descripción</h2>
+            <div [innerHTML]="project.description"></div>
+
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h2 class="shiny-title fw-bold mb-3">Tecnologías</h2>
+            <ul class="tags-ul">
+                @for (tag of project.tags; track tag) {
+                <li class="tag-li border rounded"><small>{{tag}}</small></li>
+                }
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h2 class="shiny-title fw-bold mb-3">Características</h2>
+            <div [innerHTML]="project.features"></div>
+
+        </div>
+
+    </section>
+
+    <app-footer></app-footer>
+
+</main>

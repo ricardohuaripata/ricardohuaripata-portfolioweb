@@ -1,15 +1,15 @@
 <div class="container mt-4">
     <div class="row justify-content-center">
-        <div *ngFor="let proyecto of proyectos" class="col-md-5 rounded mx-auto mt-4 box-background px-0">
+        <div *ngFor="let project of projects" class="col-md-5 rounded mx-auto mt-4 box-background px-0">
             <div>
-                <img [src]="proyecto.imagenPortadaUrl" class="rounded" alt="retrato">
+                <img [src]="project.thumbnail" class="rounded" [alt]="project.title">
 
                 <div class="mx-3 my-4">
                     <div class="d-flex justify-content-between">
-                        <p class="fs-5 fw-bold"><a [routerLink]="['/projects', proyecto.id]">{{proyecto.titulo}}</a></p>
+                        <p class="fs-5 fw-bold"><a [routerLink]="['/projects', project.id]">{{project.title}}</a></p>
 
-                        <a class="nav-link" [href]="proyecto.githubRepoUrl" target="_blank"
-                            title="GitHub - Visitar repositorio del proyecto en GitHub">
+                        <a class="nav-link" [href]="project.githubRepoUrl" target="_blank"
+                            title="Visitar repositorio en GitHub">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
                                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -17,10 +17,10 @@
                                 </path>
                             </svg></a>
                     </div>
-                    <p>{{proyecto.descripcion}}</p>
-                    <ul>
-                        @for (etiqueta of proyecto.etiquetas; track etiqueta) {
-                        <li class="border rounded"><small>{{etiqueta}}</small></li>
+                    <p>{{project.summary}}</p>
+                    <ul class="tags-ul">
+                        @for (tag of project.tags; track tag) {
+                        <li class="tag-li border rounded"><small>{{tag}}</small></li>
                         }
                     </ul>
                 </div>

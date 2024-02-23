@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ProjectService } from '../../services/project.service';
+import { Project } from '../../interfaces/project';
 
 @Component({
   selector: 'app-projects',
@@ -10,16 +12,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent {
-  proyectos: any[] = [];
+export class ProjectsComponent implements OnInit {
+  projects: Project[] = [];
 
-  constructor(private http: HttpClient) {
-    this.loadProjects();
-  }
+  constructor(private projectService: ProjectService) {}
 
-  loadProjects() {
-    this.http.get<any[]>('assets/projects.json').subscribe((data) => {
-      this.proyectos = data;
+  ngOnInit(): void {
+    this.projectService.getProjects().subscribe((projects) => {
+      this.projects = projects;
     });
   }
 }
