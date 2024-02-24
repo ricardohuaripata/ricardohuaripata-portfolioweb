@@ -25,7 +25,7 @@ export class HomePageComponent {
   successSubmit: boolean = false;
   experienciaList = [
     {
-      puesto: 'QA Automation Trainee',
+      puesto: 'QA Automation',
       empresa: 'Atos España',
       enlace: 'https://atos.net/es/spain',
       fecha: 'Marzo 2023 - Junio 2023',

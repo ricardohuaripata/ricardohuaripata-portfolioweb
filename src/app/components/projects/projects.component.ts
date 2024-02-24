@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProjectService } from '../../services/project.service';
 import { Project } from '../../interfaces/project';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
@@ -12,14 +12,23 @@ import { Project } from '../../interfaces/project';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, OnDestroy {
   projects: Project[] = [];
+  private subscription: Subscription | undefined;
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    this.projectService.getProjects().subscribe((projects) => {
-      this.projects = projects;
-    });
+    this.subscription = this.projectService
+      .getProjects()
+      .subscribe((projects) => {
+        this.projects = projects;
+      });
+  }
+
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }
