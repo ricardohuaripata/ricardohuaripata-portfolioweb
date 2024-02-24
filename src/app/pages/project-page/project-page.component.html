@@ -61,21 +61,21 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Tecnologías</h2>
-            <ul class="tags-ul">
-                @for (tag of project.tags; track tag) {
-                <li class="tag-li border rounded"><small>{{tag}}</small></li>
-                }
-            </ul>
+            <h2 class="shiny-title fw-bold mb-3">Características</h2>
+            <div [innerHTML]="project.features"></div>
+
         </div>
 
     </section>
 
     <section class="mb-5">
         <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Características</h2>
-            <div [innerHTML]="project.features"></div>
-
+            <h2 class="shiny-title fw-bold mb-3">Tecnologías</h2>
+            <ul class="tags-ul">
+                @for (tag of project.tags; track tag) {
+                <li class="tag-li border rounded"><small>{{tag}}</small></li>
+                }
+            </ul>
         </div>
 
     </section>
