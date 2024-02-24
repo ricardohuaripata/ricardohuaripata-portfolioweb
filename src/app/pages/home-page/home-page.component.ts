@@ -36,6 +36,7 @@ export class HomePageComponent {
     this.form = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, this.emailValidator]],
+      subject: ['', [Validators.required]],
       message: ['', [Validators.required]],
     });
   }
