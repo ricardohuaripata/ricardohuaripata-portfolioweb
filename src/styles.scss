@@ -121,3 +121,9 @@ a:hover {
 .clickable {
   cursor: pointer;
 }
+
+.img-card-project {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  width: 100%;
+}
