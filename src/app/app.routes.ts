@@ -51,7 +51,7 @@ const projects: Project[] = [
     "githubRepoUrl": "https://github.com/ricardohuaripata/ASHON-Ecommerce-Client",
     "thumbnail": "assets/images/projects/project1/project1-thumbnail.webp",
     "demoVideoUrl": "https://res.cloudinary.com/dmravgyts/video/upload/v1708714309/ASHON-Demo-Add-to-cart_gr4zjr.mp4",
-    "startDate": "mar. 2023 - jun. 2023",
+    "startDate": "mar. 2023",
     "endDate": "jun. 2023",
     "features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li></ul>"
 
@@ -62,19 +62,16 @@ export const routes: Routes = [
   {
     path: '',
     component: HomePageComponent,
-    title: 'Ricardo Huaripata 👨‍💻 | Full Stack Developer',
     data: { projects: projects },
   },
   {
     path: 'projects/' + projects[0].id,
     component: ProjectPageComponent,
-    title: 'Ricardo Huaripata 👨‍💻 | ' + projects[0].title,
     data: { project: projects[0] },
   },
   {
     path: 'projects/' + projects[1].id,
     component: ProjectPageComponent,
-    title: 'Ricardo Huaripata 👨‍💻 | ' + projects[1].title,
     data: { project: projects[1] },
   },
   {

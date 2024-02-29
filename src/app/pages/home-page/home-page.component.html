@@ -41,11 +41,11 @@
             <h2 class="fw-bold mb-3">Experiencia</h2>
             <!-- Línea de tiempo -->
             <div class="timeline">
-                <div *ngFor="let experiencia of experienciaList" class="timeline-item mb-4">
-                    <p class="fs-5 my-0"><span class="shiny-text">{{ experiencia.puesto }}</span> - <a
-                            [href]="experiencia.enlace" target="_blank">{{ experiencia.empresa }}</a></p>
-                    <small>{{ experiencia.fecha }}</small>
-                    <p class="mt-2">{{ experiencia.descripcion }}</p>
+                <div *ngFor="let experience of experiences" class="timeline-item mb-4">
+                    <p class="fs-5 my-0"><span class="shiny-text">{{ experience.job }}</span> - <a
+                            [href]="experience.link" target="_blank">{{ experience.enterprise }}</a></p>
+                    <small>{{ experience.date }}</small>
+                    <p class="mt-2">{{ experience.description }}</p>
                 </div>
             </div>
             <!-- Fin de la línea de tiempo -->

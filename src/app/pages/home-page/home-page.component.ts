@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import {
   AbstractControl,
   FormBuilder,
@@ -10,7 +10,9 @@ import {
 import { TechnologiesComponent } from '../../components/technologies/technologies.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import { SeoService } from '../../services/seo.service';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'app-home-page',
@@ -25,18 +27,22 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
     FooterComponent,
   ],
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
+  title = 'Ricardo Huaripata 👨‍💻 | Full Stack Developer';
+  description = '¡Hola Mundo! 👋🏼 Soy Ricardo, un apasionado de la tecnología, los deportes y los desafíos. Con una formación en Desarrollo de aplicaciones web, actualmente me encuentro en un emocionante viaje de aprendizaje para especializarme como Full Stack Developer y explorar nuevas oportunidades en la industria tecnológica.';
+  page_image_url = 'https://ricardodev.vercel.app/assets/images/portfolio-web.webp';
+  seo = inject(SeoService);
   form: FormGroup;
   loading: boolean = false;
   submited: boolean = false;
   successSubmit: boolean = false;
-  experienciaList = [
+  experiences = [
     {
-      puesto: 'QA Automation',
-      empresa: 'Atos España',
-      enlace: 'https://atos.net/es/spain',
-      fecha: 'Marzo 2023 - Junio 2023',
-      descripcion:
+      job: 'QA Automation',
+      enterprise: 'Atos España',
+      link: 'https://atos.net/es/spain',
+      date: 'Marzo 2023 - Junio 2023',
+      description:
         'Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.',
     },
   ];
@@ -47,6 +53,25 @@ export class HomePageComponent {
       subject: ['', [Validators.required]],
       message: ['', [Validators.required]],
     });
+  }
+  ngOnInit(): void {
+    this.seo.title.setTitle(this.title);
+    this.seo.setCanonicalURL(environment.BASE_URL);
+    this.seo.setIndexFollow(true);
+    this.seo.meta.updateTag({ name: 'description', content: this.description });
+    this.seo.meta.updateTag({ name: 'apple-mobile-web-app-title', content: environment.APP_NAME });
+    this.seo.meta.updateTag({ name: 'application-name', content: environment.APP_NAME });
+    this.seo.meta.updateTag({ property: 'twitter:title', content: this.title });
+    this.seo.meta.updateTag({ property: 'twitter:description', content: this.description });
+    this.seo.meta.updateTag({ property: 'twitter:url', content: environment.BASE_URL });
+    this.seo.meta.updateTag({ name: 'twitter:image', content: this.page_image_url });
+    this.seo.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.seo.meta.updateTag({ property: 'og:site_name', content: environment.APP_NAME });
+    this.seo.meta.updateTag({ property: 'og:title', content: this.title });
+    this.seo.meta.updateTag({ property: 'og:description', content: this.description });
+    this.seo.meta.updateTag({ name: 'og:image', content: this.page_image_url });
+    this.seo.meta.updateTag({ property: 'og:url', content: environment.BASE_URL });
+
   }
 
   emailValidator(control: AbstractControl): { [key: string]: boolean } | null {
