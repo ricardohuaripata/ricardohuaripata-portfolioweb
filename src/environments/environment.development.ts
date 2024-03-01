@@ -1,4 +1,4 @@
 export const environment = {
-  APP_NAME: 'ricardodev.vercel.app',
-  BASE_URL: 'https://ricardodev.vercel.app',
+  APP_NAME: 'ricardo-huaripata-portfolio.vercel.app',
+  BASE_URL: 'https://ricardo-huaripata-portfolio.vercel.app',
 };
