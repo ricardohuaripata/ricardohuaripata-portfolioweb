@@ -28,7 +28,8 @@ const projects: Project[] = [
     "demoVideoUrl": "https://res.cloudinary.com/dmravgyts/video/upload/v1707159228/E-commerce-Demo_gusl7r.mp4",
     "startDate": "oct. 2023",
     "endDate": "ene. 2024",
-    "features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li><li>🌍 Multilenguaje</li></ul>"
+    "features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li><li>🌍 Multilenguaje</li></ul>",
+    "link": "projects/ogs-ecommerce"
 
   },
   {
@@ -53,8 +54,23 @@ const projects: Project[] = [
     "demoVideoUrl": "https://res.cloudinary.com/dmravgyts/video/upload/v1708714309/ASHON-Demo-Add-to-cart_gr4zjr.mp4",
     "startDate": "mar. 2023",
     "endDate": "jun. 2023",
-    "features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li></ul>"
+    "features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li></ul>",
+    "link": "projects/ashon-ecommerce"
 
+  },
+  {
+    "id": "4-pics-1-word",
+    "title": "4 Fotos 1 Palabra",
+    "summary": "4 Fotos 1 Palabra lo define su propio nombre, ya que consiste en tratar de adivinar el acertijo que se oculta detrás de las cuatro fotos presentadas en la pantalla. Este acertijo se resume en una sola palabra, la cual guarda relación con las fotografías de cada partida.",
+    "tags": [
+      "Angular",
+      "Bootstrap",
+      "Supabase",
+
+    ],
+    "githubRepoUrl": "https://github.com/ricardohuaripata/4-fotos-1-palabra",
+    "thumbnail": "assets/images/projects/project3/project3-thumbnail.webp",
+    "link": "https://4-fotos-1-palabra.vercel.app/"
   }
 ]
 
