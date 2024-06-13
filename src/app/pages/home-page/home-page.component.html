@@ -5,7 +5,7 @@
             <div class="col-md-8">
                 <h1 class="fw-bold">Hola, <span class="shiny-title">soy Ricardo</span>
                 </h1>
-                <h5 class="shiny-text shine-effect">Desarrollador Full Stack</h5>
+                <h5 class="shiny-text shine-effect">Desarrollador Web Full Stack</h5>
 
                 <p class="fs-5 mt-5 mb-4">¡Hola Mundo! 👋🏼 Soy Ricardo, un apasionado de la tecnología, los deportes y
                     los
@@ -13,7 +13,7 @@
                     Con una formación en <span class="shiny-text">desarrollo de aplicaciones web</span>, actualmente me
                     encuentro en un emocionante
                     viaje de
-                    aprendizaje para especializarme como Full Stack Developer y explorar nuevas oportunidades en la
+                    aprendizaje para especializarme como Desarrollador Backend Java y explorar nuevas oportunidades en la
                     industria tecnológica.</p>
             </div>
             <div class="col-md-4">
@@ -45,7 +45,8 @@
                     <p class="fs-5 my-0"><span class="shiny-text">{{ experience.job }}</span> - <a
                             [href]="experience.link" target="_blank">{{ experience.enterprise }}</a></p>
                     <small>{{ experience.date }}</small>
-                    <p class="mt-2">{{ experience.description }}</p>
+                    <div class="mt-2" [innerHTML]="experience.description"></div>
+                    
                 </div>
             </div>
             <!-- Fin de la línea de tiempo -->
@@ -77,8 +78,9 @@
                 <p class="mt-2">Hablante nativo</p>
             </div>
             <div class="mb-4">
-                <p class="fs-5 my-0"><span class="shiny-text">Ingles</span></p>
-                <p class="mt-2">Intermedio-avanzado</p>
+                <p class="fs-5 my-0"><span class="shiny-text">Inglés</span></p>
+                <p class="mt-2">Intermedio-alto</p>
+                <p><a href="https://cert.efset.org/iDSeVS" target="_blank" title="Mostrar certificado">EF SET English Certificate 57/100 (B2 Upper Intermediate)</a></p>
             </div>
 
         </div>

@@ -1,0 +1,12 @@
+.img-card-project-container {
+  overflow: hidden; /* Oculta el desbordamiento de la imagen */
+  position: relative; /* Asegura que el posicionamiento relativo del contenedor */
+}
+
+.img-card-project:hover {
+  transform: scale(1.2); /* Aplica un zoom del 120% al hacer hover */
+}
+
+.img-card-project {
+  transition: transform 0.3s ease; /* Añade una transición suave */
+}

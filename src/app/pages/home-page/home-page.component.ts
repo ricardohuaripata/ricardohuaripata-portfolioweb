@@ -43,7 +43,7 @@ export class HomePageComponent implements OnInit {
       link: 'https://atos.net/es/spain',
       date: 'Marzo 2023 - Junio 2023',
       description:
-        'Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.',
+        '<p>Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.</p><ul><li>Cypress y Javascript</li><li>Jmeter y Java</li><li>Appium y Java</li><li>Selenium y Java</li><li>Metodología Scrum</li></ul>',
     },
   ];
   constructor(private fb: FormBuilder) {
