@@ -38,12 +38,12 @@ export class HomePageComponent implements OnInit {
   successSubmit: boolean = false;
   experiences = [
     {
-      job: 'QA Automation',
+      job: 'Software QA Automation',
       enterprise: 'Atos España',
       link: 'https://atos.net/es/spain',
       date: 'Marzo 2023 - Junio 2023',
       description:
-        '<p>Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.</p><ul><li>Cypress y Javascript</li><li>Jmeter y Java</li><li>Appium y Java</li><li>Selenium y Java</li><li>Metodología Scrum</li></ul>',
+        '<p>Estancia en empresa de consultoría formando parte de un equipo de QA trabajando en el control de calidad del frontend de una aplicación web mediante pruebas automatizadas. Las tecnologías llevadas a cabo para la automatización de pruebas fueron Selenium en un proyecto Spring Boot, Git para el control de versiones, Trello y Github para la gestión de tareas y Scrum como metodología de desarrollo.</p><ul><li>Control de calidad de software</li><li>Desarrollo de tests automatizados con Java y Selenium</li><li>Gestión de tareas con Github</li><li>Metodología Scrum</li><li>Trabajo en equipo</li></ul><p>Tecnologías aprendidas: Cypress, Jmeter, Appium y Selenium.</p>',
     },
   ];
   constructor(private fb: FormBuilder) {
