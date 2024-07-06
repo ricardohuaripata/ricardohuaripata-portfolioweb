@@ -20,9 +20,13 @@ $success: #14a800;
 }
 
 body {
-  padding-top: 65px;
+  padding-top: 64px;
   background: var(--brand-secondary);
   color: #e2e8f0;
+}
+
+section {
+  scroll-margin-top: 64px;
 }
 
 .shiny-title {
@@ -31,11 +35,6 @@ body {
 
 .shiny-text {
   color: var(--brand-tertiary);
-}
-
-.transparent-background {
-  background-color: rgba(0, 14, 39, 0.397);
-  backdrop-filter: blur(15px);
 }
 
 .brand-text {
@@ -113,10 +112,13 @@ body {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline 2px;
+  text-decoration-color: var(--brand-main);
+  text-underline-offset: 8px;
 }
 
 .clickable {
