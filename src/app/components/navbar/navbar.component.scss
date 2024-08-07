@@ -1,3 +1,13 @@
 nav {
   background-color: var(--brand-secondary);
 }
+
+a {
+  color: #e2e8f0;
+}
+
+a:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: var(--brand-main);
+  text-underline-offset: 6px;
+}

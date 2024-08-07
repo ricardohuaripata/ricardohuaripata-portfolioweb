@@ -28,8 +28,8 @@ import { environment } from '../../../environments/environment.development';
   ],
 })
 export class HomePageComponent implements OnInit {
-  title = 'Ricardo Huaripata 👨‍💻 | Full Stack Developer';
-  description = '¡Hola Mundo! 👋🏼 Soy Ricardo, un apasionado de la tecnología, los deportes y los desafíos. Con una formación en Desarrollo de aplicaciones web, actualmente me encuentro en un emocionante viaje de aprendizaje para especializarme como Full Stack Developer y explorar nuevas oportunidades en la industria tecnológica.';
+  title = 'Ricardo Huaripata | Full Stack Developer';
+  description = '¡Hola Mundo! Soy Ricardo, un apasionado de la tecnología, los deportes y los desafíos. Con una formación en Desarrollo de aplicaciones web, actualmente me encuentro en un emocionante viaje de aprendizaje para especializarme como Full Stack Developer y explorar nuevas oportunidades en la industria tecnológica.';
   page_image_url = environment.BASE_URL + '/assets/images/portfolio-web.webp';
   seo = inject(SeoService);
   form: FormGroup;
