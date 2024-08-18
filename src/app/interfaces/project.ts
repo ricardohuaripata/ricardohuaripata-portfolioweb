@@ -1,3 +1,5 @@
+import { Video } from "./video";
+
 export interface Project {
   id: string;
   title: string;
@@ -7,7 +9,7 @@ export interface Project {
   features?: string;
   githubRepoUrl: string;
   thumbnail: string;
-  demoVideoUrl?: string;
+  videos?: Video[];
   startDate?: string;
   endDate?: string;
   link: string;
