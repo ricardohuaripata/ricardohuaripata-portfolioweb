@@ -40,9 +40,12 @@
             <h2 class="shiny-title fw-bold mb-3">Resumen</h2>
             <p class="fs-5 my-0">{{project.summary}}</p>
 
+        </div>
+
+        <div>
             @for (video of project.videos; track video) {
             <div class="mt-5">
-                <h3>{{ video.title }}</h3>
+                <h4 class="text-center">{{ video.title }}</h4>
                 <div class="ratio ratio-16x9 mt-4">
                     <video preload="none" controls [poster]="video.thumbnail">
                         <source [src]="video.link" type="video/mp4">
@@ -50,10 +53,7 @@
                     </video>
                 </div>
             </div>
-
             }
-
-
         </div>
 
     </section>

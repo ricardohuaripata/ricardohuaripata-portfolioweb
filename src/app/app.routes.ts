@@ -31,12 +31,7 @@ const projects: Project[] = [
       {
         title: 'Añadir al carrito',
         thumbnail: "https://res.cloudinary.com/dmravgyts/image/upload/v1723999404/projects/ogs-ecommerce/photos/ogs-ecommerce-add-to-cart_libsnm.png",
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1723995830/projects/ogs-ecommerce/videos/E-commerce_-_Cart_fny3nk.mp4',
-      },
-      {
-        title: 'Pasarela de pago',
-        thumbnail: "https://res.cloudinary.com/dmravgyts/image/upload/v1723999847/projects/ogs-ecommerce/photos/ogs-ecommerce-payment-gateway_dizkih.png",
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1723995907/projects/ogs-ecommerce/videos/E-commerce_-_Checkout_wzhbg9.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1724008937/projects/ogs-ecommerce/videos/E-commerce-Demo_a6fah7.mp4',
       },
       {
         title: 'Verificación de email',
@@ -61,7 +56,7 @@ const projects: Project[] = [
     summary:
       'Proyecto final de ciclo en el que se desarrolló aplicación web de arquitectura cliente-servidor que consiste en una tienda online para la venta de ropa para hombres y mujeres. La aplicación busca ofrecer una experiencia de usuario excepcional al proporcionar una interfaz atractiva y moderna, garantizando una navegación eficiente por los productos y una experiencia de compra intuitiva.',
     description:
-      "Proyecto final de ciclo en el que se desarrolló aplicación web de arquitectura cliente-servidor que consiste en una tienda online para la venta de ropa para hombres y mujeres. La aplicación busca ofrecer una experiencia de usuario excepcional al proporcionar una interfaz atractiva y moderna, garantizando una navegación eficiente por los productos y una experiencia de compra intuitiva. <br><br>En cuanto a las tecnologías utilizadas, se utilizó Angular junto con HTML, CSS y JavaScript para el desarrollo de la interfaz gráfica. Para el desarrollo del servidor y de la API, se utilizó Node.js con Express.js, se implementó una base de datos no relacional con MongoDB y se implementaron librerías como Cloudinary para el almacenamiento en la nube de imagenes de productos, OAuth2 para el inicio de sesión con Google, la librería Nodemailer junto con OAuth2 para el enviar correos electrónicos de verificación o de restablecimiento de contraseñas y la librería de Stripe para el procesamiento de pagos en línea. Además, <span class='shiny-text'>se estableció una metodología ágil para el desarrollo del proyecto</span>, lo que permitió la entrega incremental de las funcionalidades. Finalmente, se llevó a cabo el despliegue de la aplicación utilizando servicios de terceros como Heroku para el alojamiento del servidor y AWS Amplify para el alojamiento de la aplicación cliente.",
+      "Proyecto final de ciclo en el que se desarrolló aplicación web de arquitectura cliente-servidor que consiste en una tienda online para la venta de ropa para hombres y mujeres. La aplicación busca ofrecer una experiencia de usuario excepcional al proporcionar una interfaz atractiva y moderna, garantizando una navegación eficiente por los productos y una experiencia de compra intuitiva. <br><br>En cuanto a las tecnologías utilizadas, se utilizó Angular junto con HTML, CSS y JavaScript para el desarrollo de la interfaz gráfica. Para el desarrollo del servidor y de la API, se utilizó Node.js con Express.js, se implementó una base de datos no relacional con MongoDB y se implementaron librerías como Cloudinary para el almacenamiento en la nube de imagenes de productos, OAuth2 para el inicio de sesión con Google, la librería Nodemailer junto con OAuth2 para el enviar correos electrónicos de verificación o de restablecimiento de contraseñas y la librería de Stripe para el procesamiento de pagos en línea. <br><br>Además, <span class='shiny-text'>se estableció una metodología ágil para el desarrollo del proyecto</span>, lo que permitió la entrega incremental de las funcionalidades. Finalmente, se llevó a cabo el despliegue de la aplicación utilizando servicios de terceros como Heroku para el alojamiento del servidor y AWS Amplify para el alojamiento de la aplicación cliente.",
     tags: [
       'RESTful API',
       'Node.js',
