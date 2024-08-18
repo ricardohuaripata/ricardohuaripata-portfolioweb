@@ -30,7 +30,7 @@ const projects: Project[] = [
     videos: [
       {
         title: 'Añadir al carrito',
-        thumbnail: "https://res.cloudinary.com/dmravgyts/image/upload/v1723999404/projects/ogs-ecommerce/photos/ogs-ecommerce-add-to-cart_libsnm.png",
+        thumbnail: "https://res.cloudinary.com/dmravgyts/image/upload/v1724016032/projects/ogs-ecommerce/photos/ogs-ecommerce-add-to-cart_f6v3ga.png",
         link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1724008937/projects/ogs-ecommerce/videos/E-commerce-Demo_a6fah7.mp4',
       },
       {

@@ -1,6 +1,5 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { Project } from '../../interfaces/project';
 import { SeoService } from '../../services/seo.service';
@@ -11,7 +10,8 @@ import { environment } from '../../../environments/environment.development';
   standalone: true,
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.scss',
-  imports: [CommonModule, FooterComponent],
+  imports: [FooterComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectPageComponent implements OnInit {
   title: string;

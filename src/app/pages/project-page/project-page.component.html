@@ -1,4 +1,5 @@
-<main *ngIf="this.project" class="container my-5">
+@if (this.project) {
+<main class="container my-5">
 
     <section class="mb-5">
         <div class="row">
@@ -39,22 +40,25 @@
         <div class="mx-3">
             <h2 class="shiny-title fw-bold mb-3">Resumen</h2>
             <p class="fs-5 my-0">{{project.summary}}</p>
-
         </div>
+    </section>
 
-        <div>
+    <section class="mb-5">
+
+        <swiper-container navigation="true">
             @for (video of project.videos; track video) {
-            <div class="mt-5">
-                <h4 class="text-center">{{ video.title }}</h4>
-                <div class="ratio ratio-16x9 mt-4">
+
+            <swiper-slide>
+                <div class="ratio ratio-16x9">
                     <video preload="none" controls [poster]="video.thumbnail">
                         <source [src]="video.link" type="video/mp4">
                         Tu navegador no soporta el tag de video.
                     </video>
                 </div>
-            </div>
+            </swiper-slide>
             }
-        </div>
+
+        </swiper-container>
 
     </section>
 
@@ -91,3 +95,4 @@
     <app-footer></app-footer>
 
 </main>
+}
