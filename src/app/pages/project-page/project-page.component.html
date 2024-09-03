@@ -38,7 +38,7 @@
     <section class="mb-5">
         <div class="mx-3">
             <h2 class="shiny-title fw-bold mb-3">Resumen</h2>
-            <p class="fs-5 my-0">{{project.summary}}</p>
+            <p class="fs-5 mb-0">{{project.summary}}</p>
         </div>
     </section>
 
@@ -64,7 +64,7 @@
     <section class="mb-5">
         <div class="mx-3">
             <h2 class="shiny-title fw-bold mb-3">Descripción</h2>
-            <div [innerHTML]="project.description"></div>
+            <p class="mb-0" [innerHTML]="project.description"></p>
 
         </div>
 
@@ -90,8 +90,6 @@
         </div>
 
     </section>
-
-    <app-footer></app-footer>
 
 </main>
 }
