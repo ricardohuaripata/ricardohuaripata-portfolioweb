@@ -57,7 +57,6 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
     this.seo.title.setTitle(this.title);
     this.seo.setCanonicalURL(environment.BASE_URL);
-    this.seo.addPreloadImage('/assets/images/retrato-min.webp');
     this.seo.setIndexFollow(true);
     this.seo.meta.updateTag({ name: 'description', content: this.description });
     this.seo.meta.updateTag({ name: 'apple-mobile-web-app-title', content: environment.APP_NAME });

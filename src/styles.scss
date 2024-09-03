@@ -4,6 +4,11 @@
   --brand-tertiary: #8bf2ff;
 }
 
+@font-face {
+  font-family: "Onest Variable";
+  src: url("/assets/onest-latin-wght-normal.ycwkluYs.woff2") format("woff2");
+}
+
 // 1. Essential functions
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -34,6 +39,13 @@ $success: #14a800;
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/images";
 
+body {
+  padding-top: 64px;
+  background: var(--brand-secondary);
+  color: #e2e8f0;
+  font-family: "Onest Variable", sans-serif;
+}
+
 ::selection {
   background-color: var(--brand-main);
   color: #000000; /* Para cambiar el color del texto cuando está seleccionado */
@@ -41,12 +53,6 @@ $success: #14a800;
 
 .container {
   max-width: 950px;
-}
-
-body {
-  padding-top: 64px;
-  background: var(--brand-secondary);
-  color: #e2e8f0;
 }
 
 .fixed-top {
@@ -71,14 +77,6 @@ section {
 
 .shiny-text {
   color: var(--brand-tertiary);
-}
-
-.brand-text {
-  font-weight: 900;
-}
-
-.custom-padding-top {
-  padding-top: 72px;
 }
 
 .tags-ul {
