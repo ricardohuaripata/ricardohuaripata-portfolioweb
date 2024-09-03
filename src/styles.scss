@@ -4,11 +4,35 @@
   --brand-tertiary: #8bf2ff;
 }
 
+// 1. Essential functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Default variables
 $primary: #3ec2ff;
-$secondary: #02061a;
+$secondary: #030b1a;
 $success: #14a800;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+// 3. Scss variables
+@import "../node_modules/bootstrap/scss/variables";
+
+// 4. Required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 5. Optional components
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/images";
 
 ::selection {
   background-color: var(--brand-main);
@@ -23,6 +47,14 @@ body {
   padding-top: 64px;
   background: var(--brand-secondary);
   color: #e2e8f0;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 nav {

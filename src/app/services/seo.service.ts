@@ -28,4 +28,14 @@ export class SeoService {
   setIndexFollow(state: boolean = true) {
     this.meta.updateTag({ name: 'robots', content: state ? 'index, follow' : 'noindex, nofollow'});
   }
+
+  addPreloadImage(imageUrl: string): void {
+    const HEAD = this._document.getElementsByTagName('head')[0];
+    const element = this._document.createElement('link') as HTMLLinkElement;
+    element.setAttribute('rel', 'preload');
+    element.setAttribute('as', 'image');
+    element.setAttribute('href', imageUrl);
+    HEAD.appendChild(element);
+  }
+  
 }
