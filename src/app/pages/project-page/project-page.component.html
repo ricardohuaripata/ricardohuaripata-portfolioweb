@@ -21,7 +21,7 @@
 
                     <div class="mt-auto d-flex align-items-center">
                         <a class="d-flex align-items-center" [href]="project.githubRepoUrl" target="_blank">
-                            <p class="mb-0 me-2">Visitar repositorio</p>
+                            <p class="mb-0 me-2">{{ 'label.project.visit.github' | translate }}</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em"
                                 width="1em" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -37,9 +37,11 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Resumen</h2>
-            <p class="fs-5 mb-0">{{project.summary}}</p>
+            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.description.title' | translate }}</h3>
+            <p class="mb-0" [innerHTML]="project.description"></p>
+
         </div>
+
     </section>
 
     <section class="mb-5">
@@ -63,16 +65,7 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Descripción</h2>
-            <p class="mb-0" [innerHTML]="project.description"></p>
-
-        </div>
-
-    </section>
-
-    <section class="mb-5">
-        <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Características</h2>
+            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.features.title' | translate }}</h3>
             <div [innerHTML]="project.features"></div>
 
         </div>
@@ -81,7 +74,7 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h2 class="shiny-title fw-bold mb-3">Tecnologías</h2>
+            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.tech.title' | translate }}</h3>
             <ul class="tags-ul">
                 @for (tag of project.tags; track tag) {
                 <li class="tag-li border rounded"><small>{{tag}}</small></li>

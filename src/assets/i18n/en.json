@@ -1,0 +1,24 @@
+{
+    "label.navbar.about": "About me",
+    "label.navbar.tech": "Tech stack",
+    "label.navbar.projects": "Projects",
+    "label.navbar.contact": "Contact",
+    "label.home.about.hello": "Hi, <span class='shiny-title'>I'm Ricardo</span>",
+    "label.home.about.developer": "Web developer",
+    "label.home.about.presentation": "Hello World! 👋🏼 I'm Ricardo, a passionate programmer and techie. With a background in <span class='shiny-text'>web application development</span>, I'm currently on an exciting learning journey to specialize as a <span class='shiny-text'>backend developer</span> and explore new opportunities in the software development industry.",
+    "label.home.tech.title": "Tech stack",
+    "label.home.projects.title": "Projects",
+    "label.home.contact.title": "Contact",
+    "label.home.tech.description": "On my journey through the <span class='shiny-text'>world of web development</span>, I have gained experience and skills across a variety of technologies. <span class='shiny-text'>My tech stack includes:</span>",
+    "label.home.projects.description": "My most exciting and creative projects. Each project is the result of my dedication and passion for programming, and I'm excited to share them with you. Discover how I transform <span class='shiny-text'>ideas into digital realities</span>. Explore, inspire and create with my software projects!",
+    "label.home.contact.description": "You can contact me through this form or through some of my social networks.",
+    "label.project.visit.github": "Visit repository",
+    "label.project.summary.title": "Summary",
+    "label.project.description.title": "Description",
+    "label.project.features.title": "Features",
+    "label.project.tech.title": "Technologies"
+
+
+
+
+}

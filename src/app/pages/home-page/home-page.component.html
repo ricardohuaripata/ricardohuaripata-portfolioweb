@@ -3,14 +3,11 @@
     <section class="pt-5 mx-3" id="sobre-mi">
         <div class="row">
             <div class="col-md-8">
-                <h1 class="fw-bold mb-0">Hola, <span class="shiny-title">soy Ricardo</span>
+                <h1 class="fw-bold mb-0" [innerHTML]="'label.home.about.hello' | translate">
                 </h1>
-                <p class="fs-5 mb-0 shiny-text shine-effect">Desarrollador Web</p>
+                <p class="fs-5 mb-0 shiny-text shine-effect">{{ 'label.home.about.developer' | translate }}</p>
 
-                <p class="fs-5 mt-5 mb-4">¡Hola Mundo! 👋🏼 Soy Ricardo, un apasionado de la programación y de la tecnología.
-                    Con una formación en <span class="shiny-text">desarrollo de aplicaciones web</span>, actualmente me encuentro en un emocionante
-                    viaje de aprendizaje para especializarme como <span class="shiny-text">desarrollador backend</span> y para explorar nuevas oportunidades en la
-                    industria del desarrollo de software.</p>
+                <p class="fs-5 mt-5 mb-4" [innerHTML]="'label.home.about.presentation' | translate"></p>
             </div>
             <div class="col-md-4">
                 <img src="/assets/images/retrato-min.webp" class="img-thumbnail mx-auto d-block" alt="retrato-min.webp" width="300px" height="300px">
@@ -68,21 +65,16 @@
 
     <section class="mt-5 py-4" id="tecnologias">
         <div class="mx-3">
-            <h2 class="fw-bold mb-3">Tecnologías</h2>
-            <p class="fs-5 mb-0">En mi viaje por el <span class="shiny-text">mundo del desarrollo web</span>, he
-                cultivado experiencia y habilidades en una variedad de tecnologías. <span class="shiny-text">Mi
-                    stack tecnológico incluye:</span></p>
+            <h2 class="fw-bold mb-3">{{ 'label.home.tech.title' | translate }}</h2>
+            <p class="fs-5 mb-0" [innerHTML]="'label.home.tech.description' | translate"></p>
         </div>
         <app-technologies></app-technologies>
     </section>
 
     <section class="mt-5 py-4" id="proyectos">
         <div class="mx-3">
-            <h2 class="fw-bold mb-3">Proyectos</h2>
-            <p class="fs-5 mb-0">Mis proyectos más emocionantes y creativos. Cada proyecto es el resultado de mi
-                dedicación y pasión por la programación, y estoy encantado de compartirlos contigo. Descubre cómo
-                transformo <span class="shiny-text">ideas en realidades digitales</span>. ¡Explora, inspira y crea con
-                mis proyectos de software!</p>
+            <h2 class="fw-bold mb-3">{{ 'label.home.projects.title' | translate }}</h2>
+            <p class="fs-5 mb-0" [innerHTML]="'label.home.projects.description' | translate"></p>
         </div>
         <app-projects></app-projects>
     </section>
@@ -127,9 +119,8 @@
     <section class="mt-5 py-4" id="contacto">
         <div class="mx-3 text-center">
 
-            <h2 class="fw-bold mb-3">Contacto</h2>
-            <p class="fs-5 mb-0">Puedes comunicarte conmigo a través de este formulario o por algunas de mis redes
-                sociales.</p>
+            <h2 class="fw-bold mb-3">{{ 'label.home.contact.title' | translate }}</h2>
+            <p class="fs-5 mb-0">{{ 'label.home.contact.description' | translate }}</p>
 
             <div class="mt-4 d-flex justify-content-center gap-3">
                 <a href="https://github.com/ricardohuaripata" target="_blank"

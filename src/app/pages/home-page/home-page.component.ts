@@ -13,6 +13,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import emailjs from '@emailjs/browser';
 import { SeoService } from '../../services/seo.service';
 import { environment } from '../../../environments/environment.development';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home-page',
@@ -25,6 +26,7 @@ import { environment } from '../../../environments/environment.development';
     TechnologiesComponent,
     ProjectsComponent,
     FooterComponent,
+    TranslateModule
   ],
 })
 export class HomePageComponent implements OnInit {

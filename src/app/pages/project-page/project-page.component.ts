@@ -1,16 +1,16 @@
 import { Component, OnInit, inject, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FooterComponent } from '../../components/footer/footer.component';
 import { Project } from '../../interfaces/project';
 import { SeoService } from '../../services/seo.service';
 import { environment } from '../../../environments/environment.development';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.scss',
-  imports: [FooterComponent],
+  imports: [TranslateModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectPageComponent implements OnInit {
