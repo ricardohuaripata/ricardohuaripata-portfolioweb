@@ -10,12 +10,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  lang?: string;
-  constructor(private translateService: TranslateService) {
-    this.lang = translateService.getDefaultLang();
-  }
-  changeLanguage(newLang: string) {
-    this.lang = newLang;
-    this.translateService.use(newLang);
+  constructor(private translateService: TranslateService) {}
+  changeLanguage(event: Event) {
+    const selectValue = (event.target as HTMLSelectElement)?.value;
+    this.translateService.use(selectValue);
   }
 }
