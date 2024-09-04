@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top py-2" aria-label="navbar">
     <div class="container">
-        <a class="navbar-brand p-0" href="/">
+        <a class="navbar-brand p-0" [routerLink]="['/']">
             <img src="/assets/images/logo.png" alt="ricardohuaripata.com" width="48px" height="48px">
         </a>
 
@@ -29,7 +29,7 @@
                     <a href="#contacto">{{ 'label.navbar.contact' | translate }}</a>
                 </li>
             </ul>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-center">
                 <li class="nav-item py-2 mx-2">
                     <a href="https://github.com/ricardohuaripata" target="_blank"
                         title="GitHub - Visita mi perfil en GitHub"><svg stroke="none" fill="#e2e8f0" stroke-width="0"

@@ -12,6 +12,8 @@
     "label.home.tech.description": "En mi viaje por el <span class='shiny-text'>mundo del desarrollo web</span>, he cultivado experiencia y habilidades en una variedad de tecnologías. <span class='shiny-text'>Mi stack tecnológico incluye:</span>",
     "label.home.projects.description": "Mis proyectos más emocionantes y creativos. Cada proyecto es el resultado de mi dedicación y pasión por la programación, y estoy encantado de compartirlos contigo. Descubre cómo transformo <span class='shiny-text'>ideas en realidades digitales</span>. ¡Explora, inspira y crea con mis proyectos de software!",
     "label.home.contact.description": "Puedes comunicarte conmigo a través de este formulario o por algunas de mis redes sociales.",
+    "label.home.tech.stack.tools": "Herramientas",
+    "label.home.tech.stack.learning": "Aprendiendo",
     "label.project.visit.github": "Visitar repositorio",
     "label.project.summary.title": "Resumen",
     "label.project.description.title": "Descripción",
