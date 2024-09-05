@@ -12,13 +12,13 @@
         <div class="collapse navbar-collapse justify-content-around text-center" id="navbar10">
             <ul class="navbar-nav">
                 <li class="nav-item py-2 mx-3">
-                    <a href="#sobre-mi">{{ 'label.navbar.about' | translate }}</a>
+                    <a [routerLink]="['/']" fragment="sobre-mi">{{ 'label.navbar.about' | translate }}</a>
                 </li>
                 <li class="nav-item py-2 mx-3">
-                    <a href="#tecnologias">{{ 'label.navbar.tech' | translate }}</a>
+                    <a [routerLink]="['/']" fragment="tecnologias">{{ 'label.navbar.tech' | translate }}</a>
                 </li>
                 <li class="nav-item py-2 mx-3">
-                    <a href="#proyectos">{{ 'label.navbar.projects' | translate }}</a>
+                    <a [routerLink]="['/']" fragment="proyectos">{{ 'label.navbar.projects' | translate }}</a>
                 </li>
                 <!--
                 <li class="nav-item">
@@ -26,7 +26,7 @@
                 </li>
                 -->
                 <li class="nav-item py-2 mx-3">
-                    <a href="#contacto">{{ 'label.navbar.contact' | translate }}</a>
+                    <a [routerLink]="['/']" fragment="contacto">{{ 'label.navbar.contact' | translate }}</a>
                 </li>
             </ul>
             <ul class="navbar-nav">

@@ -18,7 +18,7 @@
                                 </path>
                             </svg></a>
                     </div>
-                    <p>{{project.summary}}</p>
+                    <p>{{ project.summary | translate }}</p>
                     <ul class="tags-ul">
                         @for (tag of project.tags; track tag) {
                         <li class="tag-li border rounded"><small>{{tag}}</small></li>

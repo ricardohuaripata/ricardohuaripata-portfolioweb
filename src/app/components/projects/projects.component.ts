@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Project } from '../../interfaces/project';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
