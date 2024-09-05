@@ -1,4 +1,9 @@
 {
+    "label.social.email.title": "Email - Send an email to ricardohuaripatabellido@gmail.com",
+    "label.social.linkedin.title": "LinkedIn - Connect with me on LinkedIn",
+    "label.social.github.title": "GitHub - Visit my profile on GitHub",
+    "label.social.github.project.title": "GitHub - Visit repository on GitHub",
+
     "label.navbar.about": "About me",
     "label.navbar.tech": "Tech stack",
     "label.navbar.projects": "Projects",
@@ -6,6 +11,7 @@
 
     "label.home.about.hello": "Hi, <span class='shiny-title'>I'm Ricardo</span>",
     "label.home.about.developer": "Web developer",
+    "label.home.about.resume": "Resume",
     "label.home.about.presentation": "Hello World! 👋🏼 I'm Ricardo, a passionate programmer and techie. With a background in <span class='shiny-text'>web application development</span>, I'm currently on an exciting learning journey to specialize as a <span class='shiny-text'>backend developer</span> and explore new opportunities in the software development industry.",
     "label.home.tech.title": "Tech stack",
     "label.home.projects.title": "Projects",

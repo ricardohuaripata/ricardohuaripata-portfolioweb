@@ -14,6 +14,9 @@ import emailjs from '@emailjs/browser';
 import { SeoService } from '../../services/seo.service';
 import { environment } from '../../../environments/environment.development';
 import { TranslateModule } from '@ngx-translate/core';
+import { GithubComponent } from '../../components/shared/github/github.component';
+import { LinkedinComponent } from '../../components/shared/linkedin/linkedin.component';
+import { EmailComponent } from '../../components/shared/email/email.component';
 
 @Component({
   selector: 'app-home-page',
@@ -26,7 +29,10 @@ import { TranslateModule } from '@ngx-translate/core';
     TechnologiesComponent,
     ProjectsComponent,
     FooterComponent,
-    TranslateModule
+    TranslateModule,
+    GithubComponent,
+    LinkedinComponent,
+    EmailComponent
   ],
 })
 export class HomePageComponent implements OnInit {

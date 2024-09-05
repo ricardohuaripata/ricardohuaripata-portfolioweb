@@ -37,7 +37,6 @@ $success: #14a800;
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/images";
 
 body {
   padding-top: 64px;
@@ -151,5 +150,4 @@ a {
 .img-card-project {
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  width: 100%;
 }

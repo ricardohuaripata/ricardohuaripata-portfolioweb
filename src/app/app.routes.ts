@@ -112,12 +112,12 @@ export const routes: Routes = [
     data: { projects: projects },
   },
   {
-    path: 'projects/' + projects[0].id,
+    path: 'projects/ogs-ecommerce',
     component: ProjectPageComponent,
     data: { project: projects[0] },
   },
   {
-    path: 'projects/' + projects[1].id,
+    path: 'projects/ashon-ecommerce',
     component: ProjectPageComponent,
     data: { project: projects[1] },
   },
