@@ -71,51 +71,49 @@
                 <div class="col-md-6 border text-bg-light rounded">
                     <form [formGroup]="form" class="mx-3 my-4" (ngSubmit)="onSubmit()">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Nombre"
+                            <input type="text" class="form-control" id="name" [placeholder]="'label.home.contact.form.name' | translate"
                                 formControlName="name" autocomplete="name"
                                 [ngClass]="{ 'is-invalid': form.get('name')!.invalid && this.submited }">
-                            <div *ngIf="form.get('name')!.hasError('required')" class="invalid-feedback">
-                                Campo requerido
-                            </div>
+                            <div *ngIf="form.get('name')!.hasError('required')" class="invalid-feedback">{{ 'label.home.contact.form.required.field' | translate }}</div>
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="email" placeholder="Correo electrónico"
+                            <input type="text" class="form-control" id="email" [placeholder]="'label.home.contact.form.email' | translate"
                                 formControlName="email" autocomplete="email"
                                 [ngClass]="{ 'is-invalid': form.get('email')!.invalid && this.submited }">
                             <div *ngIf="form.get('email')!.hasError('required')" class="invalid-feedback">
-                                Campo requerido
+                                {{ 'label.home.contact.form.required.field' | translate }}
                             </div>
                             <div *ngIf="form.get('email')!.hasError('invalidEmail')" class="invalid-feedback">
-                                Correo electrónico no válido
+                                {{ 'label.home.contact.form.invalid.email' | translate }}
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="subject" placeholder="Asunto"
+                            <input type="text" class="form-control" id="subject" [placeholder]="'label.home.contact.form.subject' | translate"
                                 formControlName="subject"
                                 [ngClass]="{ 'is-invalid': form.get('subject')!.invalid && this.submited }">
                             <div *ngIf="form.get('subject')!.hasError('required')" class="invalid-feedback">
-                                Campo requerido
+                                {{ 'label.home.contact.form.required.field' | translate }}
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <textarea class="form-control" id="message" placeholder="Mensaje" rows="5"
+                            <textarea class="form-control" id="message" [placeholder]="'label.home.contact.form.message' | translate" rows="5"
                                 formControlName="message"
                                 [ngClass]="{ 'is-invalid': form.get('message')!.invalid && this.submited }"></textarea>
                             <div *ngIf="form.get('message')!.hasError('required')" class="invalid-feedback">
-                                Campo requerido
+                                {{ 'label.home.contact.form.required.field' | translate }}
                             </div>
                         </div>
 
                         <button class="btn btn-primary btn-md fw-bold w-100" type="submit" [disabled]="this.loading">
-                            Enviar</button>
+                            {{ 'label.home.contact.form.submit' | translate }}</button>
                     </form>
 
                     <div class="alert alert-success" role="alert" *ngIf="this.successSubmit">
-                        <h5 class="alert-heading">🎉¡Enviado!🎉</h5>
-                        <p class="my-0">Mensaje enviado. Gracias por tu interés, nos comunicaremos pronto.</p>
+                        <h5 class="alert-heading">{{ 'label.home.contact.form.submitted.alert.title' | translate }}</h5>
+                        <p class="my-0">{{ 'label.home.contact.form.submitted.alert.text' | translate }}</p>
                     </div>
                 </div>
             </div>
