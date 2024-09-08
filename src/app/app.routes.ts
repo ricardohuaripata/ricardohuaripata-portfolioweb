@@ -53,8 +53,8 @@ const projects: Project[] = [
   {
     id: 'ashon-ecommerce',
     title: 'ASHON E-commerce',
-    summary: 'label.project.ogs-ecommerce.summary',
-    description: 'label.project.ogs-ecommerce.description',
+    summary: 'label.project.ashon-ecommerce.summary',
+    description: 'label.project.ashon-ecommerce.description',
     tags: [
       'RESTful API',
       'Node.js',
