@@ -8,7 +8,11 @@
                 </div>
                 <div class="mx-3 my-4">
                     <div class="d-flex justify-content-between">
-                        <p class="fs-5 fw-bold"><a [routerLink]="[project.link]">{{project.title}}</a></p>
+                        @if (project.id == 'ogs-ecommerce' || project.id == 'ashon-ecommerce') {
+                            <p class="fs-5 fw-bold"><a [routerLink]="[project.link]">{{project.title}}</a></p>
+                        } @else {
+                            <p class="fs-5 fw-bold"><a [href]="project.link">{{project.title}}</a></p>
+                        }
 
                         <app-github [href]="project.githubRepoUrl" [title]="'label.social.github.project.title' | translate"
                             [smallSize]="true"></app-github>

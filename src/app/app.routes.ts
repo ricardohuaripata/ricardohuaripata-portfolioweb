@@ -103,6 +103,15 @@ const projects: Project[] = [
     thumbnail: 'assets/images/projects/project3/project3-thumbnail.webp',
     link: 'https://4-fotos-1-palabra.vercel.app/',
   },
+  /*{
+    id: 'cinesa-web',
+    title: 'Cinesa',
+    summary: 'label.project.4-pics-1-word.summary',
+    tags: ['Angular', 'Bootstrap', 'Tailwind', 'Flowbite', 'swiper.js'],
+    githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
+    thumbnail: 'assets/images/projects/project4/project4-thumbnail.webp',
+    link: 'https://cinesa-web.vercel.app/',
+  },*/
 ];
 
 export const routes: Routes = [
