@@ -2,12 +2,25 @@ nav {
   background-color: var(--brand-secondary);
 }
 
-a {
+.navbar-link {
   color: #e2e8f0;
+  display: inline-block;
+  position: relative;
 }
 
-a:hover {
-  text-decoration: underline 2px;
-  text-decoration-color: var(--brand-main);
-  text-underline-offset: 6px;
+.navbar-link::before {
+  transition: 400ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: var(--brand-main);
+}
+
+.navbar-link::before {
+  width: 0%;
+  bottom: 0;
+}
+
+.navbar-link:hover::before {
+  width: 100%;
 }
