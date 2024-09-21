@@ -5,6 +5,7 @@ export interface Project {
   title: string;
   summary: string;
   description?: string;
+  category: string;
   tags: string[];
   features?: string;
   githubRepoUrl: string;

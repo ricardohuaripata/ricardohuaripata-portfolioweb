@@ -9,6 +9,7 @@ const projects: Project[] = [
     title: "Og's E-commerce",
     summary: 'label.project.ogs-ecommerce.summary',
     description: 'label.project.ogs-ecommerce.description',
+    category: 'Fullstack',
     tags: [
       'RESTful API',
       'Spring Boot',
@@ -55,6 +56,7 @@ const projects: Project[] = [
     title: 'ASHON E-commerce',
     summary: 'label.project.ashon-ecommerce.summary',
     description: 'label.project.ashon-ecommerce.description',
+    category: 'Fullstack',
     tags: [
       'RESTful API',
       'Node.js',
@@ -98,6 +100,7 @@ const projects: Project[] = [
     id: '4-pics-1-word',
     title: '4 Fotos 1 Palabra',
     summary: 'label.project.4-pics-1-word.summary',
+    category: 'Fullstack',
     tags: ['Angular', 'Bootstrap', 'Supabase'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
     thumbnail: 'assets/images/projects/project3/project3-thumbnail.webp',
@@ -107,6 +110,7 @@ const projects: Project[] = [
     id: 'cinesa-web',
     title: 'Cinesa',
     summary: 'label.project.cinesa-web.summary',
+    category: 'Frontend',
     tags: ['Angular', 'Tailwind CSS', 'Swiper'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
     thumbnail: 'assets/images/projects/project4/project4-thumbnail.png',
