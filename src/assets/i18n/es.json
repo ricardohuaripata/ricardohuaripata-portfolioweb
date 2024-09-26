@@ -46,6 +46,8 @@
     "label.project.ashon-ecommerce.features": "<ul><li>🛍 Catalogo de productos</li><li>🛒 Carrito de compras</li><li>💳 Pasarela de pago</li><li>🔒 Autenticación y registro de usuarios</li><li>📝 Gestión de la información del usuario</li><li>📋 Historial de pedidos</li><li>🔑 Recuperación de la contraseña</li><li>📫 Notificaciones por correo electrónico</li><li>📱 Responsive design</li></ul>",
 
     "label.project.4-pics-1-word.summary": "4 Fotos 1 Palabra lo define su propio nombre, ya que consiste en tratar de adivinar el acertijo que se oculta detrás de las cuatro fotos presentadas en la pantalla. Este acertijo se resume en una sola palabra, la cual guarda relación con las fotografías de cada partida.",
-    "label.project.cinesa-web.summary": "Recreación de la página oficial de cinesa.es imitando su diseño y estructura. Llevé a cabo este proyecto con el propósito de aprender a diseñar una página con el popular framework de css, Tailwind. Este framework me permitió maquetar más de 6 páginas distintas de forma muy rápida y óptima para un diseño web adaptable."
+    "label.project.cinesa-web.summary": "Recreación de la página oficial de cinesa.es imitando su diseño y estructura. Llevé a cabo este proyecto con el propósito de aprender a diseñar una página con el popular framework de css, Tailwind. Este framework me permitió maquetar más de 6 páginas distintas de forma muy rápida y óptima para un diseño web adaptable.",
+    "label.project.vanquish-fitness.summary": "Maquetación de la web oficial de Vanquish Fitness, una tienda online de ropa fitness. Elaborado con el propósito de mejorar mis habilidades de maquetación web con ayuda del framework de css Tailwind. Con Tailwind CSS logré maquetar de forma muy rápida y óptima para un diseño web adaptable para cualquier dispositivo."
+
 
 }

@@ -111,10 +111,20 @@ const projects: Project[] = [
     title: 'Cinesa',
     summary: 'label.project.cinesa-web.summary',
     category: 'Frontend',
-    tags: ['Angular', 'Tailwind CSS', 'Swiper'],
+    tags: ['Angular', 'Tailwind CSS', 'Flowbite', 'Swiper'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
     thumbnail: 'assets/images/projects/project4/project4-thumbnail.png',
     link: 'https://cinesa-web.vercel.app/',
+  },
+  {
+    id: 'vanquish-fitness',
+    title: 'Vanquish Fitness',
+    summary: 'label.project.vanquish-fitness.summary',
+    category: 'Frontend',
+    tags: ['Angular', 'Tailwind CSS', 'Flowbite'],
+    githubRepoUrl: 'https://github.com/ricardohuaripata/vanquish-fitness',
+    thumbnail: 'assets/images/projects/project5/project5-thumbnail.png',
+    link: 'https://vqfit.netlify.app/',
   },
 ];
 

@@ -46,6 +46,7 @@
     "label.project.ashon-ecommerce.features": "<ul><li>🛍 Product catalog</li><li>🛒 Shopping cart</li><li>💳 Payment gateway</li><li>🔒 User authentication and registration</li><li>📝 User information management</li><li>📋 Order history</li><li>🔑 Password recovery</li><li>📫 Email notifications</li><li>📱 Responsive design</li></ul>",
 
     "label.project.4-pics-1-word.summary": "4 Pics 1 Word is defined by its name, as it consists of trying to guess the riddle hidden behind the four photos presented on the screen. This riddle is summarized in a single word, which is related to the photographs in each game.",
-    "label.project.cinesa-web.summary": "Recreation of the official cinesa.es website imitating its design and structure. I carried out this project with the purpose of learning how to design a page with the popular css framework, Tailwind. This framework allowed me to create more than 6 different pages very quickly and optimally for a responsive web design."
+    "label.project.cinesa-web.summary": "Recreation of the official cinesa.es website imitating its design and structure. I carried out this project with the purpose of learning how to design a page with the popular css framework, Tailwind. This framework allowed me to create more than 6 different pages very quickly and optimally for a responsive web design.",
+    "label.project.vanquish-fitness.summary": "Layout of the official website of Vanquish Fitness, an online fitness clothing store. Created with the purpose of improving my web layout skills with the help of the Tailwind CSS framework. With Tailwind CSS I managed to create a very fast and optimal layout for a responsive web design for any device."
 
 }
