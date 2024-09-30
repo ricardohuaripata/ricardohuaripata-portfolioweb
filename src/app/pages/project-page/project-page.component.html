@@ -47,7 +47,7 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h3 class="shiny-title fw-bold mb-3">Galeria</h3>
+            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.gallery.title' | translate }}</h3>
         </div>
 
         <div class="row">
@@ -101,7 +101,7 @@
                 @for (tech of project.techStack; track tech) {
                 <tr>
                     <td class="text-center px-3 py-2">{{tech.name}}</td>
-                    <td class="px-3 py-2"><small>{{tech.description}}</small></td>
+                    <td class="px-3 py-2"><small>{{tech.description | translate}}</small></td>
                 </tr>
                 }
 
