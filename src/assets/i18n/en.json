@@ -37,6 +37,8 @@
   "label.project.gallery.title": "Gallery",
   "label.project.features.title": "Features",
   "label.project.tech.title": "Technologies",
+  "label.project.tech.table.title": "Technology",
+  "label.project.tech.table.usage": "Usage",
 
   "label.project.tech.angular.description": "Angular is a front-end development framework developed and maintained by Google. It has been used in this project to build the dynamic and interactive user interface.",
   "label.project.tech.bootstrap.description": "Bootstrap is a front-end design framework that facilitates the design and development of responsive and attractive web interfaces. It has been integrated into the project to enhance the appearance and user experience across different devices.",
