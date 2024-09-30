@@ -1,0 +1,10 @@
+<div class="row pswp-gallery" id="pswp-gallery">
+    @for (image of images; track $index) {
+    <div class="col-md-6 mb-4">
+        <a [href]="image.src" target="_blank" [attr.data-pswp-width]="image.width" [attr.data-pswp-height]="image.height">
+            <img [src]="image.src" class="img-card-project rounded" [alt]="'image gallery ' + ($index + 1)" width="100%"
+                height="auto" loading="lazy"></a>
+
+    </div>
+    }
+</div>

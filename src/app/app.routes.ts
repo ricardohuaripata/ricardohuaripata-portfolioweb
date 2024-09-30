@@ -27,12 +27,36 @@ const projects: Project[] = [
     githubRepoUrl: 'https://github.com/ricardohuaripata/ecommerce-frontend',
     thumbnail: 'assets/images/projects/project2/project2-thumbnail.png',
     gallery: [
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727703510/projects/ogs-ecommerce/photos/828_1x_shots_so_afhqrq.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727702548/projects/ogs-ecommerce/photos/701shots_so_rmobsq.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727702542/projects/ogs-ecommerce/photos/94shots_so_eyqgie.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727703991/projects/ogs-ecommerce/photos/192_1x_shots_so_rkvnpx.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727710604/projects/ogs-ecommerce/photos/170_1x_shots_so_wfzuzo.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727710598/projects/ogs-ecommerce/photos/324_1x_shots_so_dajw6r.png',
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727703510/projects/ogs-ecommerce/photos/828_1x_shots_so_afhqrq.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727702548/projects/ogs-ecommerce/photos/701shots_so_rmobsq.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727702542/projects/ogs-ecommerce/photos/94shots_so_eyqgie.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727703991/projects/ogs-ecommerce/photos/192_1x_shots_so_rkvnpx.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727710604/projects/ogs-ecommerce/photos/170_1x_shots_so_wfzuzo.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727710598/projects/ogs-ecommerce/photos/324_1x_shots_so_dajw6r.png',
+        width: 1920,
+        height: 1280,
+      },
     ],
     videos: [
       {
@@ -106,12 +130,36 @@ const projects: Project[] = [
     githubRepoUrl: 'https://github.com/ricardohuaripata/ASHON-Ecommerce-Client',
     thumbnail: 'assets/images/projects/project1/project1-thumbnail.png',
     gallery: [
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727708182/projects/ashon-ecommerce/photos/981_1x_shots_so_oqyywk.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727709489/projects/ashon-ecommerce/photos/51_1x_shots_so_gyrkph.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727709502/projects/ashon-ecommerce/photos/775shots_so_esebkz.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727709513/projects/ashon-ecommerce/photos/773_1x_shots_so_pjizbo.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727709519/projects/ashon-ecommerce/photos/654_1x_shots_so_tmajoe.png',
-      'https://res.cloudinary.com/dmravgyts/image/upload/v1727709524/projects/ashon-ecommerce/photos/224_1x_shots_so_vudn8n.png',
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727708182/projects/ashon-ecommerce/photos/981_1x_shots_so_oqyywk.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727709489/projects/ashon-ecommerce/photos/51_1x_shots_so_gyrkph.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727709502/projects/ashon-ecommerce/photos/775shots_so_esebkz.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727709513/projects/ashon-ecommerce/photos/773_1x_shots_so_pjizbo.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727709519/projects/ashon-ecommerce/photos/654_1x_shots_so_tmajoe.png',
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727709524/projects/ashon-ecommerce/photos/224_1x_shots_so_vudn8n.png',
+        width: 1920,
+        height: 1280,
+      },
     ],
     videos: [
       {

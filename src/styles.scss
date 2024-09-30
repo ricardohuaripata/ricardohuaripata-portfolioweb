@@ -39,6 +39,8 @@ $success: #14a800;
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/alert";
 
+@import 'photoswipe/dist/photoswipe.css';
+
 body {
   padding-top: 64px;
   background: var(--brand-secondary);

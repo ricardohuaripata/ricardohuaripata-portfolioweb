@@ -4,13 +4,14 @@ import { Project } from '../../interfaces/project';
 import { SeoService } from '../../services/seo.service';
 import { environment } from '../../../environments/environment.development';
 import { TranslateModule } from '@ngx-translate/core';
+import { PhotoGalleryComponent } from '../../components/photo-gallery/photo-gallery.component';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.scss',
-  imports: [TranslateModule],
+  imports: [TranslateModule, PhotoGalleryComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectPageComponent implements OnInit {

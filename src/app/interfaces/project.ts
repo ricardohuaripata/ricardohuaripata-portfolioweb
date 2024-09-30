@@ -1,6 +1,6 @@
-import { Tech } from "./tech";
+  import { Tech } from "./tech";
 import { Video } from "./video";
-
+import { Image } from "./image";
 export interface Project {
   id: string;
   title: string;
@@ -12,7 +12,7 @@ export interface Project {
   techStack?: Tech[];
   githubRepoUrl: string;
   thumbnail: string;
-  gallery?: string[];
+  gallery?: Image[];
   videos?: Video[];
   startDate?: string;
   endDate?: string;
