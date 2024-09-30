@@ -1,3 +1,4 @@
+import { Tech } from "./tech";
 import { Video } from "./video";
 
 export interface Project {
@@ -8,6 +9,7 @@ export interface Project {
   category: string;
   tags: string[];
   features?: string;
+  techStack?: Tech[];
   githubRepoUrl: string;
   thumbnail: string;
   videos?: Video[];

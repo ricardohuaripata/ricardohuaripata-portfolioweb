@@ -4,7 +4,8 @@
     <section class="mb-5">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <img [src]="this.project.thumbnail" class="img-card-project rounded" [alt]="this.project.title" width="100%" height="auto">
+                <img [src]="this.project.thumbnail" class="img-card-project rounded" [alt]="this.project.title"
+                    width="100%" height="auto">
 
             </div>
             <div class="col-md-8 mb-4">
@@ -75,6 +76,31 @@
     <section class="mb-5">
         <div class="mx-3">
             <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.tech.title' | translate }}</h3>
+        </div>
+
+        <table>
+            <thead>
+                <tr class="text-center">
+                    <th scope="col" class="px-3 py-2">TECNOLOGÍA</th>
+                    <th scope="col" class="px-3 py-2">USO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (tech of project.techStack; track tech) {
+                <tr>
+                    <td class="text-center px-3 py-2">{{tech.name}}</td>
+                    <td class="px-3 py-2"><small>{{tech.description}}</small></td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h3 class="shiny-title fw-bold mb-3">Tags</h3>
             <ul class="tags-ul">
                 @for (tag of project.tags; track tag) {
                 <li class="tag-li border rounded"><small>{{tag}}</small></li>

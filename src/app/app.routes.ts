@@ -50,6 +50,32 @@ const projects: Project[] = [
     endDate: '01/2024',
     features: 'label.project.ogs-ecommerce.features',
     link: 'projects/ogs-ecommerce',
+    techStack: [
+      {
+        name: 'Angular',
+        description: 'Angular es un framework de desarrollo front-end desarrollado y mantenido por Google. Se ha utilizado en este proyecto para construir la interfaz de usuario dinámica y interactiva.',
+      },
+      {
+        name: 'Bootstrap',
+        description: 'Bootstrap es un marco de diseño front-end que facilita el diseño y desarrollo de interfaces web responsivas y atractivas. Se ha integrado en el proyecto para mejorar la apariencia y la experiencia del usuario en diferentes dispositivos.',
+      },
+      {
+        name: 'Spring Boot',
+        description: 'Spring es un framework de desarrollo de aplicaciones Java que proporciona una amplia gama de funcionalidades para el desarrollo de aplicaciones empresariales. En este proyecto, se ha utilizado la plataforma Spring, específicamente Spring Boot, para la creación eficiente de servicios RESTful y la gestión del backend.',
+      },
+      {
+        name: 'PostgreSQL',
+        description: 'PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto y altamente extensible. Ha sido empleado como el sistema de gestión de base de datos principal para almacenar y recuperar datos de manera eficiente en el proyecto.'
+      },
+      {
+        name: 'Stripe',
+        description: 'Stripe es una plataforma de procesamiento de pagos en línea que permite a los comercios recibir pagos de forma segura y eficiente. Se ha utilizado en este proyecto para implementar la pasarela de pago y gestionar los pagos de los usuarios.',
+      },
+      {
+        name: 'Amazon S3',
+        description: 'Amazon S3 es un servicio de almacenamiento de objetos que permite almacenar y recuperar datos de manera eficiente en el proyecto.',
+      },
+    ],
   },
   {
     id: 'ashon-ecommerce',
@@ -95,6 +121,37 @@ const projects: Project[] = [
     endDate: '06/2023',
     features: 'label.project.ashon-ecommerce.features',
     link: 'projects/ashon-ecommerce',
+    techStack: [
+      {
+        name: 'Angular',
+        description: 'Angular es un framework de desarrollo front-end desarrollado y mantenido por Google. Se ha utilizado en este proyecto para construir la interfaz de usuario dinámica y interactiva.',
+      },
+      {
+        name: 'Bootstrap',
+        description: 'Bootstrap es un marco de diseño front-end que facilita el diseño y desarrollo de interfaces web responsivas y atractivas. Se ha integrado en el proyecto para mejorar la apariencia y la experiencia del usuario en diferentes dispositivos.',
+      },
+      {
+        name: 'Node.js',
+        description: 'Node.js es un entorno de ejecución de JavaScript que permite ejecutar código JavaScript en el servidor. Se ha utilizado en este proyecto para construir la API RESTful y gestionar el backend.',
+      },
+      {
+        name: 'Express.js',
+        description: 'Express.js es un framework de Node.js que facilita el desarrollo de aplicaciones web y APIs RESTful. Se ha utilizado en este proyecto para construir la API RESTful y gestionar el backend.',
+      },
+      {
+        name: 'MongoDB',
+        description: 'MongoDB es una base de datos NoSQL que utiliza un modelo de datos orientado a documentos. Se ha utilizado en este proyecto para almacenar y recuperar datos de manera eficiente en el backend.',
+      },
+      {
+        name: 'Stripe',
+        description: 'Stripe es una plataforma de procesamiento de pagos en línea que permite a los comercios recibir pagos de forma segura y eficiente. Se ha utilizado en este proyecto para implementar la pasarela de pago y gestionar los pagos de los usuarios.',
+      },
+      {
+        name: 'Cloudinary',
+        description: 'Cloudinary es una plataforma de gestión de imágenes que permite a los desarrolladores almacenar, optimizar y servir imágenes de manera eficiente. Se ha utilizado en este proyecto para almacenar y servir las imágenes de los productos.',
+      },
+      
+    ],
   },
   {
     id: '4-pics-1-word',
