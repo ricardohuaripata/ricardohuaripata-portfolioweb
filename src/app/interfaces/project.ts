@@ -12,6 +12,7 @@ export interface Project {
   techStack?: Tech[];
   githubRepoUrl: string;
   thumbnail: string;
+  gallery?: string[];
   videos?: Video[];
   startDate?: string;
   endDate?: string;
