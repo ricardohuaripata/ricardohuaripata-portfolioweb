@@ -29,10 +29,6 @@
       "status": 404
     },
     {
-      "src": "/(.*).json",
-      "status": 404
-    },
-    {
       "src": "/(.*).yml",
       "status": 404
     },
