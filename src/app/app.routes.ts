@@ -224,7 +224,7 @@ const projects: Project[] = [
     tags: ['Angular', 'Bootstrap', 'Supabase'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
     thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969957/projects/4f1p/project3-thumbnail_fklm8e.png',
-    link: 'https://4-fotos-1-palabra.vercel.app/',
+    link: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
   },
   {
     id: 'cinesa-web',
@@ -234,7 +234,7 @@ const projects: Project[] = [
     tags: ['Angular', 'Tailwind CSS', 'Flowbite', 'Swiper'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
     thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969966/projects/cinesa/project4-thumbnail_lm8qgn.png',
-    link: 'https://cinesa-web.vercel.app/',
+    link: 'https://cinesaweb.netlify.app/',
   },
   {
     id: 'vanquish-fitness',
