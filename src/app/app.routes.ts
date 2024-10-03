@@ -25,7 +25,7 @@ const projects: Project[] = [
       'Bootstrap',
     ],
     githubRepoUrl: 'https://github.com/ricardohuaripata/ecommerce-frontend',
-    thumbnail: 'assets/images/projects/project2/project2-thumbnail.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969994/projects/ogs-ecommerce/project2-thumbnail_k3l7sy.png',
     gallery: [
       {
         src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727703510/projects/ogs-ecommerce/photos/828_1x_shots_so_afhqrq.png',
@@ -128,7 +128,7 @@ const projects: Project[] = [
       'Bootstrap',
     ],
     githubRepoUrl: 'https://github.com/ricardohuaripata/ASHON-Ecommerce-Client',
-    thumbnail: 'assets/images/projects/project1/project1-thumbnail.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727970004/projects/ashon-ecommerce/project1-thumbnail_xbxmkw.png',
     gallery: [
       {
         src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727708182/projects/ashon-ecommerce/photos/981_1x_shots_so_oqyywk.png',
@@ -223,7 +223,7 @@ const projects: Project[] = [
     category: 'Fullstack',
     tags: ['Angular', 'Bootstrap', 'Supabase'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
-    thumbnail: 'assets/images/projects/project3/project3-thumbnail.webp',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969957/projects/4f1p/project3-thumbnail_fklm8e.png',
     link: 'https://4-fotos-1-palabra.vercel.app/',
   },
   {
@@ -233,7 +233,7 @@ const projects: Project[] = [
     category: 'Frontend',
     tags: ['Angular', 'Tailwind CSS', 'Flowbite', 'Swiper'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
-    thumbnail: 'assets/images/projects/project4/project4-thumbnail.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969966/projects/cinesa/project4-thumbnail_lm8qgn.png',
     link: 'https://cinesa-web.vercel.app/',
   },
   {
@@ -243,7 +243,7 @@ const projects: Project[] = [
     category: 'Frontend',
     tags: ['Angular', 'Tailwind CSS', 'Flowbite'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/vanquish-fitness',
-    thumbnail: 'assets/images/projects/project5/project5-thumbnail.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1727969926/projects/vqfit/project5-thumbnail_raapsg.png',
     link: 'https://vqfit.netlify.app/',
   },
 ];

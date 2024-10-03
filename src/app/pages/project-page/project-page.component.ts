@@ -27,7 +27,7 @@ export class ProjectPageComponent implements OnInit {
     this.routeURL = environment.BASE_URL + '/' + 'projects/' + this.project.id;
     this.title = 'Ricardo Huaripata | ' + this.project.title;
     this.description = 'Explora uno de mis últimos proyectos desarrollados por mi: ' + this.project.title + '. Descubre todas sus funcionalidades y características y observa un video desmostrativo de la aplicación.';
-    this.page_image_url = environment.BASE_URL + '/' + this.project.thumbnail;
+    this.page_image_url = this.project.thumbnail;
   }
 
   ngOnInit(): void {
