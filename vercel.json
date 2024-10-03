@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "src": "/wp-(.*)",
+      "status": 404
+    },
+    {
+      "src": "/shell.php",
+      "status": 404
+    },
+    {
+      "src": "/makeasmtp.php",
+      "status": 404
+    },
+    {
+      "src": "/install.php",
+      "status": 404
+    },
+    {
+      "src": "/autoload_classmap.php",
+      "status": 404
+    },
+    {
+      "src": "/.well-known/pki-validation/(.*)",
+      "status": 404
+    },
+    {
+      "src": "/updates.php",
+      "status": 404
+    },
+    {
+      "src": "/edit.php",
+      "status": 404
+    }
+  ]
+}
