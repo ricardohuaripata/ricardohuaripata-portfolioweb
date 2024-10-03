@@ -5,32 +5,48 @@
       "status": 404
     },
     {
-      "src": "/shell.php",
+      "src": "/(.*).php",
       "status": 404
     },
     {
-      "src": "/makeasmtp.php",
+      "src": "/(.*).php7",
       "status": 404
     },
     {
-      "src": "/install.php",
+      "src": "/(.*).phtml",
       "status": 404
     },
     {
-      "src": "/autoload_classmap.php",
+      "src": "/(.*).sql",
       "status": 404
     },
     {
-      "src": "/.well-known/pki-validation/(.*)",
+      "src": "/(.*).config",
       "status": 404
     },
     {
-      "src": "/updates.php",
+      "src": "/(.*).txt",
       "status": 404
     },
     {
-      "src": "/edit.php",
+      "src": "/(.*).json",
       "status": 404
+    },
+    {
+      "src": "/(.*).yml",
+      "status": 404
+    },
+    {
+      "src": "/(.*).key",
+      "status": 404
+    },
+    {
+      "src": "/(.*).env",
+      "status": 404
+    },
+    {
+      "src": "/(.*credentials.*)",
+      "status": 403
     }
   ]
 }
