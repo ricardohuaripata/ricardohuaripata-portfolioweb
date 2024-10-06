@@ -224,7 +224,7 @@ const projects: Project[] = [
     tags: ['Angular', 'Bootstrap', 'Supabase'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
     thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728237266/projects/4f1p/project3-thumbnail-min_gghzxx.png',
-    link: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
+    link: 'https://4-fotos-1-palabra.pages.dev/',
   },
   {
     id: 'cinesa-web',
@@ -245,6 +245,16 @@ const projects: Project[] = [
     githubRepoUrl: 'https://github.com/ricardohuaripata/vanquish-fitness',
     thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728237151/projects/vqfit/project5-thumbnail-min_ia5c6n.png',
     link: 'https://vqfit.netlify.app/',
+  },
+  {
+    id: 'apolo-audiovisual',
+    title: 'Apolo Audiovisual',
+    summary: 'label.project.apolo-audiovisual.summary',
+    category: 'Fullstack',
+    tags: ['Angular', 'Bootstrap', 'Supabase', 'SEO'],
+    githubRepoUrl: 'https://github.com/ricardohuaripata',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728247280/projects/apolo-audiovisual/project6-thumbnail-min_bvc7v3.png',
+    link: 'https://www.apoloaudiovisual.com/',
   },
 ];
 
