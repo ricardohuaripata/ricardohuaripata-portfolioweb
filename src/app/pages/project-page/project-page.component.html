@@ -71,15 +71,6 @@
 
     <section class="mb-5">
         <div class="mx-3">
-            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.features.title' | translate }}</h3>
-            <div [innerHTML]="project.features! | translate"></div>
-
-        </div>
-
-    </section>
-
-    <section class="mb-5">
-        <div class="mx-3">
             <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.tech.title' | translate }}</h3>
         </div>
 
@@ -100,6 +91,15 @@
 
             </tbody>
         </table>
+
+    </section>
+
+    <section class="mb-5">
+        <div class="mx-3">
+            <h3 class="shiny-title fw-bold mb-3">{{ 'label.project.features.title' | translate }}</h3>
+            <div [innerHTML]="project.features! | translate"></div>
+
+        </div>
 
     </section>
 
