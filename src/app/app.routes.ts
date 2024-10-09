@@ -63,19 +63,19 @@ const projects: Project[] = [
         title: 'Añadir al carrito',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728238361/projects/ogs-ecommerce/photos/260_1x_shots_so_min_d9coe0.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1724008937/projects/ogs-ecommerce/videos/E-commerce-Demo_a6fah7.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728432892/projects/ogs-ecommerce/videos/E-commerce-Demo_nn3jwa.webm',
       },
       {
         title: 'Verificación de email',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728238358/projects/ogs-ecommerce/photos/626_2x_shots_so_min_qsq8z2.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1723991809/projects/ogs-ecommerce/videos/E-commerce_-_Email_verification_brjysd.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728432879/projects/ogs-ecommerce/videos/E-commerce_-_Email_verification_aqboom.webm',
       },
       {
         title: 'Cuenta del usuario',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728238362/projects/ogs-ecommerce/photos/590_2x_shots_so_min_hhrieo.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1724001903/projects/ogs-ecommerce/videos/E-commerce_-_Account_ultppi.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728432879/projects/ogs-ecommerce/videos/E-commerce_-_Account_flkk5g.webm',
       },
     ],
     startDate: '10/2023',
@@ -166,19 +166,19 @@ const projects: Project[] = [
         title: 'Añadir al carrito',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728239665/projects/ashon-ecommerce/photos/263_1x_shots_so_min_cs1wgh.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1708714309/projects/ashon-ecommerce/videos/ASHON-Demo-Add-to-cart_gr4zjr.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728435105/projects/ashon-ecommerce/videos/ASHON_Demo_-_Add_to_cart_c2ip9u.webm',
       },
       {
         title: 'Google login',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728239664/projects/ashon-ecommerce/photos/477_1x_shots_so_min_ry0xbs.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1723992581/projects/ashon-ecommerce/videos/ASHON_Store_-_Google_Login_Hecho_con_Clipchamp_tjier7.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728435104/projects/ashon-ecommerce/videos/ASHON_Store_-_Google_Login_qlnjod.webm',
       },
       {
         title: 'Verificación de email',
         thumbnail:
           'https://res.cloudinary.com/dmravgyts/image/upload/v1728239667/projects/ashon-ecommerce/photos/716_1x_shots_so_min_ly9ndd.png',
-        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1723991572/projects/ashon-ecommerce/videos/ashon-email-verification_qefr5b.mp4',
+        link: 'https://res.cloudinary.com/dmravgyts/video/upload/v1728435104/projects/ashon-ecommerce/videos/ashon-email-verification_yass20.webm',
       },
     ],
     startDate: '03/2023',
