@@ -24,3 +24,11 @@ nav {
 .navbar-link:hover::before {
   width: 100%;
 }
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 4px;
+}

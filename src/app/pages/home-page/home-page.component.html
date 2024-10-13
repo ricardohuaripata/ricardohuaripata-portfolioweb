@@ -10,22 +10,19 @@
                 <p class="fs-5 mt-5 mb-4" [innerHTML]="'label.home.about.presentation' | translate"></p>
             </div>
             <div class="col-md-4">
-                <img src="https://res.cloudinary.com/dmravgyts/image/upload/v1727970996/projects/retrato-min_blyerx.png" class="mx-auto d-block" alt="retrato-min.webp" width="100%"
-                    height="auto">
+                <img src="https://res.cloudinary.com/dmravgyts/image/upload/v1727970996/projects/retrato-min_blyerx.png" class="mx-auto d-block" alt="retrato ricardo" width="300px"
+                    height="300px">
             </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="/assets/CV_RICARDO_HUARIPATA.pdf">
-                <button class="btn btn-outline-primary">{{ 'label.home.about.resume' | translate }}</button>
-            </a>
+        <div class="d-flex justify-content-center justify-content-sm-between align-items-center mt-4">
 
-            <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex gap-3">
                 <app-github [href]="'https://github.com/ricardohuaripata'"
-                    [title]="'label.social.github.title' | translate" [smallSize]="false"></app-github>
+                    [title]="'label.social.github.title' | translate" [smallSize]="false"/>
 
-                <app-linkedin [smallSize]="false"></app-linkedin>
+                <app-linkedin [smallSize]="false"/>
 
-                <app-email></app-email>
+                <app-email/>
 
             </div>
 
@@ -33,35 +30,35 @@
 
     </section>
 
-    <section class="" id="tecnologias">
-        <div class="mx-3">
+    <section id="tecnologias">
+        <div class="px-3 mb-4">
             <h2 class="fw-bold mb-3">{{ 'label.home.tech.title' | translate }}</h2>
             <p class="fs-5 mb-0" [innerHTML]="'label.home.tech.description' | translate"></p>
         </div>
-        <app-technologies></app-technologies>
+        <app-technologies/>
     </section>
 
-    <section class="" id="proyectos">
-        <div class="mx-3">
+    <section id="proyectos">
+        <div class="px-3 mb-4">
             <h2 class="fw-bold mb-3">{{ 'label.home.projects.title' | translate }}</h2>
             <p class="fs-5 mb-0" [innerHTML]="'label.home.projects.description' | translate"></p>
         </div>
-        <app-projects></app-projects>
+        <app-projects/>
     </section>
 
-    <section class="" id="contacto">
-        <div class="mx-3 text-center">
+    <section id="contacto">
+        <div class="px-3 text-center">
 
             <h2 class="fw-bold mb-3">{{ 'label.home.contact.title' | translate }}</h2>
             <p class="fs-5 mb-0">{{ 'label.home.contact.description' | translate }}</p>
 
             <div class="mt-4 d-flex justify-content-center gap-3">
                 <app-github [href]="'https://github.com/ricardohuaripata'"
-                    [title]="'label.social.github.title' | translate" [smallSize]="false"></app-github>
+                    [title]="'label.social.github.title' | translate" [smallSize]="false"/>
 
-                <app-linkedin [smallSize]="false"></app-linkedin>
+                <app-linkedin [smallSize]="false"/>
 
-                <app-email></app-email>
+                <app-email/>
 
             </div>
         </div>
@@ -69,7 +66,7 @@
         <div class="container mt-4">
             <div class="row justify-content-center">
                 <div class="col-md-6 border text-bg-light rounded">
-                    <form [formGroup]="form" class="mx-3 my-4" (ngSubmit)="onSubmit()">
+                    <form [formGroup]="form" class="mx-2 my-4" (ngSubmit)="onSubmit()">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="name" [placeholder]="'label.home.contact.form.name' | translate"
                                 formControlName="name" autocomplete="name"
