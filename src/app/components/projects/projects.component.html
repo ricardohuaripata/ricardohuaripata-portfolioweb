@@ -1,34 +1,34 @@
-    <div class="row">
-        <div *ngFor="let project of projects" class="col-md-6 mt-4">
-            <div class="box-background rounded h-100">
-                <div class="relative autoShow">
-                    <img [src]="project.thumbnail" class="img-card-project rounded" [alt]="project.title" width="100%"
-                        height="auto" loading="lazy">
-                    <div class="position-absolute top-0 start-0 p-3">
-                        <span class="bg-black p-1 rounded bg-opacity-50 fw-semibold">{{project.category}}</span>
-                    </div>
-
-                </div>
-                <div class="mx-3 my-4">
-                    <div class="d-flex justify-content-between">
-                        @if (project.id == 'ogs-ecommerce' || project.id == 'ashon-ecommerce') {
-                        <p class="fs-5 fw-bold"><a [routerLink]="[project.link]">{{project.title}}</a></p>
-                        } @else {
-                        <p class="fs-5 fw-bold"><a [href]="project.link" target="_blank">{{project.title}}</a></p>
-                        }
-
-                        <app-github [href]="project.githubRepoUrl"
-                            [title]="'label.social.github.project.title' | translate" [smallSize]="true"></app-github>
-
-                    </div>
-                    <p>{{ project.summary | translate }}</p>
-                    <ul class="tags-ul">
-                        @for (tag of project.tags; track tag) {
-                        <li class="tag-li border rounded"><small>{{tag}}</small></li>
-                        }
-                    </ul>
+<div class="row">
+    <div *ngFor="let project of projects" class="col-md-6 mt-4">
+        <div class="box-background rounded h-100">
+            <div class="relative autoShow">
+                <img [src]="project.thumbnail" class="img-card-project rounded" [alt]="project.title" width="100%"
+                    height="auto" loading="lazy">
+                <div class="position-absolute top-0 start-0 p-3">
+                    <span class="bg-black p-1 rounded bg-opacity-50 fw-semibold">{{project.category}}</span>
                 </div>
 
             </div>
+            <div class="px-3 my-4">
+                <div class="d-flex justify-content-between">
+                    @if (project.id == 'ogs-ecommerce' || project.id == 'ashon-ecommerce') {
+                    <p class="fs-5 fw-bold"><a [routerLink]="[project.link]">{{project.title}}</a></p>
+                    } @else {
+                    <p class="fs-5 fw-bold"><a [href]="project.link" target="_blank">{{project.title}}</a></p>
+                    }
+
+                    <app-github [href]="project.githubRepoUrl" [title]="'label.social.github.project.title' | translate"
+                        [smallSize]="true"/>
+
+                </div>
+                <p>{{ project.summary | translate }}</p>
+                <ul class="tags-ul">
+                    @for (tag of project.tags; track tag) {
+                    <li class="tag-li border rounded"><small>{{tag}}</small></li>
+                    }
+                </ul>
+            </div>
+
         </div>
     </div>
+</div>
