@@ -273,5 +273,9 @@ export const routes: Routes = [
     path: 'projects/ashon-ecommerce',
     component: ProjectPageComponent,
     data: { project: projects[1] },
-  }
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  },
 ];
