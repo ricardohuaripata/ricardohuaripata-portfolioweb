@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { Project } from './interfaces/project';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const projects: Project[] = [
   {
@@ -276,7 +277,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
-    pathMatch: 'full',
+    component: NotFoundComponent
   },
 ];
