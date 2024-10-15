@@ -25,7 +25,7 @@ const projects: Project[] = [
       'Bootstrap',
     ],
     githubRepoUrl: 'https://github.com/ricardohuaripata/ecommerce-frontend',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728236435/projects/ogs-ecommerce/project2-thumbnail-min_jnhppq.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729006779/projects/ogs-ecommerce/869_1x_shots_so-min_de98x4.png',
     gallery: [
       {
         src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728238996/projects/ogs-ecommerce/photos/828_1x_shots_so_afhqrq-min_fxpyrm.png',
@@ -128,7 +128,7 @@ const projects: Project[] = [
       'Bootstrap',
     ],
     githubRepoUrl: 'https://github.com/ricardohuaripata/ASHON-Ecommerce-Client',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728236749/projects/ashon-ecommerce/project1-thumbnail-min_xdmmaz.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729007142/projects/ashon-ecommerce/279_1x_shots_so-min_mgskg8.png',
     gallery: [
       {
         src: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728240483/projects/ashon-ecommerce/photos/981_1x_shots_so_min_ubzrls.png',
@@ -223,7 +223,7 @@ const projects: Project[] = [
     category: 'Fullstack',
     tags: ['Angular', 'Bootstrap', 'Supabase'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/4-fotos-1-palabra',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728237266/projects/4f1p/project3-thumbnail-min_gghzxx.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729007217/projects/4f1p/336shots_so-min_itzdx9.png',
     link: 'https://4-fotos-1-palabra.pages.dev/',
   },
   {
@@ -233,7 +233,7 @@ const projects: Project[] = [
     category: 'Frontend',
     tags: ['Angular', 'Tailwind CSS', 'Flowbite', 'Swiper'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/cinesa-web',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728236952/projects/cinesa/project4-thumbnail-min_u2sgza.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729007266/projects/cinesa/132shots_so-min_vaavgm.png',
     link: 'https://cinesaweb.netlify.app/',
   },
   {
@@ -243,7 +243,7 @@ const projects: Project[] = [
     category: 'Frontend',
     tags: ['Angular', 'Tailwind CSS', 'Flowbite'],
     githubRepoUrl: 'https://github.com/ricardohuaripata/vanquish-fitness',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728237151/projects/vqfit/project5-thumbnail-min_ia5c6n.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729006811/projects/vqfit/472shots_so-min_nfr4pp.png',
     link: 'https://vqfit.netlify.app/',
   },
   {
@@ -253,7 +253,7 @@ const projects: Project[] = [
     category: 'Fullstack',
     tags: ['Angular', 'Bootstrap', 'Supabase', 'SEO'],
     githubRepoUrl: 'https://github.com/ricardohuaripata',
-    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1728247280/projects/apolo-audiovisual/project6-thumbnail-min_bvc7v3.png',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729007489/projects/apolo-audiovisual/451_1x_shots_so-min_ey4ksp.png',
     link: 'https://www.apoloaudiovisual.com/',
   },
 ];
