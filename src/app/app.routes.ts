@@ -256,6 +256,16 @@ const projects: Project[] = [
     thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1729007489/projects/apolo-audiovisual/451_1x_shots_so-min_ey4ksp.png',
     link: 'https://www.apoloaudiovisual.com/',
   },
+  {
+    id: 'nike-shop',
+    title: 'Nike Shop',
+    summary: 'label.project.nike-shop.summary',
+    category: 'Frontend',
+    tags: ['Astro', 'Tailwind CSS', 'Flowbite'],
+    githubRepoUrl: 'https://github.com/ricardohuaripata/nike-shop',
+    thumbnail: 'https://res.cloudinary.com/dmravgyts/image/upload/v1730405444/projects/nike-shop/566shots_so-min_s6tlvk.png',
+    link: 'https://nike-online.netlify.app/',
+  },
 ];
 
 export const routes: Routes = [
